@@ -1,11 +1,13 @@
 <template>
 	<section class="home-view">
 		<LandingElement/>
+		<CloudAssessElement/>
 	</section>
 </template>
 
 <script setup lang="ts">
 import LandingElement from '@/views/Home/elements/LandingElement.vue';
+import CloudAssessElement from '@/views/Home/elements/CloudAssessElement.vue';
 </script>
 
 <style scoped lang="scss">
@@ -15,6 +17,5 @@ import LandingElement from '@/views/Home/elements/LandingElement.vue';
 	justify-content: center;
 	width: 100%;
 	height: 100%;
-	border-top: $primary-orange-light solid 1px;
 }
 </style>

@@ -1,7 +1,11 @@
 <template>
-	<HeaderBar/>
-	<router-view/>
-	<FooterBar/>
+	<main>
+		<HeaderBar/>
+		<div class="body">
+			<router-view/>
+		</div>
+		<FooterBar/>
+	</main>
 </template>
 
 <script setup lang="ts">
@@ -13,7 +17,6 @@ import FooterBar from '@/components/FooterBar.vue';
 #app {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 	width: 100vw;
 	height: 100vh;
 	font-weight: normal;
@@ -22,5 +25,12 @@ import FooterBar from '@/components/FooterBar.vue';
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: bottom;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
 }
 </style>

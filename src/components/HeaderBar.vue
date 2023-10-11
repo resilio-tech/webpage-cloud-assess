@@ -1,5 +1,5 @@
 <template>
-	<section class="header-bar">
+	<section class="header">
 		<img src="@/assets/media/logo-ca.svg" alt="logo" class="logo"/>
 		<font-awesome-icon icon="fa-bars" class="menu" v-if="isMobile"/>
 		<ul class="header-titles" v-else>
@@ -16,14 +16,15 @@ const titles: string[] = ['Notre Solution', 'Conformité CRSD', 'Qui sommes-nous
 </script>
 
 <style scoped lang="scss">
-.header-bar {
+.header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	background: $gray-light;
 	width: 100%;
 	height: 130px;
 	padding: 10px;
-	background: $gray-light;
+	border-bottom: $primary-orange-light solid 1px;
 
 	img {
 		height: 40%;

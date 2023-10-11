@@ -1,5 +1,5 @@
 <template>
-	<div class="background-container">
+	<div class="background-container container">
 		<div class="content">
 			<p style="font-weight: bold">IaaS, PaaS, SaaS</p>
 			<h1 class="title">Vous méritez mieux que du greenwashing !</h1>
@@ -23,13 +23,10 @@ const redirectDemo = () => window.location.href = 'https://calendly.com/resilio-
 	background-position: center;
 	background-repeat: no-repeat;
 
-	height: 100%;
 	display: flex;
+	height: 100%;
 
 	.content {
-		display: flex;
-		flex-direction: column;
-		gap: $large-gap;
 		padding: $xlarge-padding $medium-padding;
 
 		h1 {

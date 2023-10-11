@@ -1,10 +1,10 @@
 <template>
-	<section class="footer-bar">
+	<section class="footer">
 		<div class="footer-content">
 			<p class="subtitle" v-for="(subtitle, index) in subtitles" :key="subtitle">
 				{{ subtitle }} :
 				<br/>
-				<span class="content" v-html="formatContent(content[index])"/>
+				<span class="subtitle-content" v-html="formatContent(content[index])"/>
 			</p>
 			<div class="footer-logo">
 				<img src="@/assets/media/flag-switzerland.svg" alt="flag" class="flag"/>
@@ -31,7 +31,7 @@ const formatContent = (text: string) => text.replace(/\n/g, '<br/>');
 </script>
 
 <style scoped lang="scss">
-.footer-bar {
+.footer {
 	display: flex;
 	padding: $large-padding $xlarge-padding $large-padding $xlarge-padding;
 	background: $gray-light;
@@ -49,6 +49,10 @@ const formatContent = (text: string) => text.replace(/\n/g, '<br/>');
 			font-weight: bold;
 			padding-top: $medium-padding;
 			max-width: 20%;
+
+			.subtitle-content {
+				font-weight: normal;
+			}
 		}
 
 		.footer-logo {
@@ -62,7 +66,7 @@ const formatContent = (text: string) => text.replace(/\n/g, '<br/>');
 
 @media screen and (max-width: 768px) {
 	// Styles for mobile screens
-	.footer-bar {
+	.footer {
 		padding: $large-padding;
 
 		.footer-content {
