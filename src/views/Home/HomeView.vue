@@ -3,6 +3,7 @@
 		<LandingElement/>
 		<CloudAssessElement/>
 		<CSRDElement/>
+		<CorpsElement/>
 	</section>
 </template>
 
@@ -10,6 +11,7 @@
 import LandingElement from '@/views/Home/elements/LandingElement.vue';
 import CloudAssessElement from '@/views/Home/elements/CloudAssessElement.vue';
 import CSRDElement from '@/views/Home/elements/CSRDElement.vue';
+import CorpsElement from '@/views/Home/elements/CorpsElement.vue';
 </script>
 
 <style scoped lang="scss">
