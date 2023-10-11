@@ -2,8 +2,8 @@
 	<section class="header-bar">
 		<img src="@/assets/media/logo-ca.svg" alt="logo" class="logo"/>
 		<font-awesome-icon icon="fa-bars" class="menu" v-if="isMobile"/>
-		<ul class="titles" v-else>
-			<li class="title" v-for="title in titles" :key="title">
+		<ul class="header-titles" v-else>
+			<li class="header-title" v-for="title in titles" :key="title">
 				<a href="#" class="nav-link">{{ title }}</a>
 			</li>
 		</ul>
@@ -36,7 +36,7 @@ const titles: string[] = ['Notre Solution', 'Conformité CRSD', 'Qui sommes-nous
 		height: 30px;
 	}
 
-	.titles {
+	.header-titles {
 		display: flex;
 		gap: $large-gap;
 	}
