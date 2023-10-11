@@ -37,15 +37,10 @@ const thirdList: string[] = [
 .cloud-assess {
 	background: $primary-orange-light;
 
-	.content {
-		gap: $xlarge-gap;
-
-		h1 {
-			color: white;
-			text-align: center;
-			font-weight: normal;
-
-		}
+	.content h1 {
+		color: white;
+		text-align: center;
+		font-weight: normal;
 	}
 }
 </style>

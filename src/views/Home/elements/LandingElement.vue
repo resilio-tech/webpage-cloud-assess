@@ -26,24 +26,8 @@ const redirectDemo = () => window.location.href = 'https://calendly.com/resilio-
 	display: flex;
 	height: 100%;
 
-	.content {
-		padding: $xlarge-padding $medium-padding;
-
-		h1 {
-			color: $primary-orange-light;
-		}
-
-		button {
-			background: $primary-orange-light;
-			width: 70%;
-			height: 30px;
-			align-self: center;
-			border: none;
-			border-radius: 15px;
-			font-weight: bold;
-			font-size: 14px;
-			color: white;
-		}
+	h1 {
+		color: $primary-orange-light;
 	}
 
 	.image .icons-background {

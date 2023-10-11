@@ -59,6 +59,18 @@ a {
     display: flex;
     flex-direction: column;
     padding: $xlarge-padding $medium-padding;
-    gap: $large-gap;
+    gap: $xlarge-gap;
+  }
+
+  button {
+    background: $primary-orange-light;
+    width: 70%;
+    height: 30px;
+    align-self: center;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
   }
 }

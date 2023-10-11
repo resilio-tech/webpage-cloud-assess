@@ -2,12 +2,14 @@
 	<section class="home-view">
 		<LandingElement/>
 		<CloudAssessElement/>
+		<CSRDElement/>
 	</section>
 </template>
 
 <script setup lang="ts">
 import LandingElement from '@/views/Home/elements/LandingElement.vue';
 import CloudAssessElement from '@/views/Home/elements/CloudAssessElement.vue';
+import CSRDElement from '@/views/Home/elements/CSRDElement.vue';
 </script>
 
 <style scoped lang="scss">
