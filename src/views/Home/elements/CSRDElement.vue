@@ -25,7 +25,31 @@ const redirectContact = () => {
 </script>
 
 <style scoped lang="scss">
-.csrd h1 {
-	text-align: center;
+.csrd {
+	display: flex;
+	justify-content: center;
+
+	h1 {
+		text-align: center;
+	}
+
+	.content {
+		width: 80%;
+
+		p {
+			width: 70%;
+			align-self: center;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		.content {
+			width: 100%;
+
+			p {
+				width: 100%;
+			}
+		}
+	}
 }
 </style>

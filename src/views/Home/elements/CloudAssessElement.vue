@@ -2,9 +2,11 @@
 	<div class="cloud-assess container">
 		<div class="content">
 			<h1>CloudAssess, c'est quoi ?</h1>
-			<CardList :list="firstList"/>
-			<CardList :list="secondList"/>
-			<CardList :list="thirdList" :backgroundColor="'#F77B0B'" :color="'white'"/>
+			<div class="card-container">
+				<CardList :list="firstList"/>
+				<CardList :list="secondList"/>
+				<CardList :list="thirdList" :backgroundColor="'#F77B0B'" :color="'white'"/>
+			</div>
 		</div>
 	</div>
 </template>
@@ -36,11 +38,30 @@ const thirdList: string[] = [
 <style scoped lang="scss">
 .cloud-assess {
 	background: $primary-orange-light;
+	justify-content: center;
 
 	.content h1 {
 		color: white;
 		text-align: center;
 		font-weight: normal;
 	}
+
+	.card-container {
+		display: flex;
+		justify-content: space-between;
+		gap: $large-gap;
+	}
 }
+@media screen and (max-width: 768px) {
+	.cloud-assess {
+		.content h1 {
+			font-size: 20px;
+		}
+
+		.card-container {
+			flex-direction: column;
+		}
+	}
+}
+
 </style>

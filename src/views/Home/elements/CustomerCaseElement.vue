@@ -28,26 +28,42 @@ const cardData = [
 
 <style scoped lang="scss">
 .content {
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 
 	.customer {
+		width: 70%;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		gap: $large-gap;
+		gap: $medium-gap;
 
 		p {
 			text-align: center;
 			font-weight: bold;
+			padding: $large-padding $xlarge-padding;
 		}
 
 		.customer-infos {
 			display: flex;
-			flex-wrap: wrap;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		.customer {
+			width: 100%;
+
+			.customer-infos {
+				flex-direction: column;
+			}
+
+			p {
+				padding: 0;
+			}
 		}
 	}
 }

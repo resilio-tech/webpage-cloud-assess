@@ -12,8 +12,8 @@
 			</p>
 		</div>
 		<div class="stats">
-			<p>XXX collaborateurs
-			<br/>+ XX% des effectifs en R&D</p>
+			<p>XXX collaborateurs</p>
+			<p>+ XX% des effectifs en R&D</p>
 			<a>Github Repository</a>
 		</div>
 	</div>
@@ -39,12 +39,11 @@
 
 	.corps-logo {
 		display: flex;
-		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 
 		.logo {
-			width: 140px;
+			width: 25%;
 			height: 100px;
 		}
 
@@ -54,13 +53,21 @@
 		}
 	}
 
+	.content {
+		width: 80%;
+
+		p {
+			width: 70%;
+			align-self: center;
+		}
+	}
+
 	.stats {
 		display: flex;
-		flex-direction: column;
 		width: 100%;
 		justify-content: center;
 		background: $primary-orange-light;
-		padding: $medium-padding;
+		padding: $xlarge-padding;
 		gap: $medium-gap;
 
 		p, a {
@@ -74,6 +81,29 @@
 			cursor: pointer;
 		}
 	}
-}
 
+	@media screen and (max-width: 768px) {
+		.corps-logo {
+			flex-direction: column;
+
+			.logo {
+				width: 140px;
+				height: 100px;
+			}
+		}
+
+		.content {
+			width: 100%;
+
+			p {
+				width: 100%;
+			}
+		}
+
+		.stats {
+			flex-direction: column;
+			padding: $medium-padding;
+		}
+	}
+}
 </style>

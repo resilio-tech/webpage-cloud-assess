@@ -4,7 +4,7 @@
 			<div class="icon-container">
 				<img src="@/assets/media/customer-case-icon.svg" alt="customer-icon" class="customer-icon"/>
 			</div>
-			<h1 class="orange-text">Faites-vous certifier !</h1>
+			<h2 class="orange-text">Faites-vous certifier !</h2>
 			<p>
 				Besoin d’appuyer la <b>fiabilité</b> de votre affichage environnemental ?
 				<br/>Faites appel à <b>CloudAssess</b> directement, via ses partenaires Kleis et Resilio.
@@ -18,8 +18,19 @@
 </script>
 
 <style scoped lang="scss">
-.icon-container {
+.certification {
 	display: flex;
 	justify-content: center;
+	align-items: center;
+
+	.icon-container {
+		display: flex;
+		justify-content: center;
+	}
+
+	h2 {
+		text-align: center;
+	}
 }
+
 </style>
