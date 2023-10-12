@@ -1,7 +1,10 @@
 <template>
 	<section class="header">
 		<img src="@/assets/media/logo-ca.svg" alt="logo" class="logo"/>
-		<font-awesome-icon icon="fa-bars" class="menu" v-if="isMobile"/>
+		<button @click="toggleMenu" aria-label="menu" class="button-menu" v-if="isMobile">
+			<font-awesome-icon icon="fa-x" class="menu" v-if="isMenuOpen"/>
+			<font-awesome-icon icon="fa-bars" class="menu" v-else/>
+		</button>
 		<ul class="header-titles" v-else>
 			<li class="header-title" v-for="title in titles" :key="title">
 				<a href="#" class="nav-link">{{ title }}</a>
@@ -11,8 +14,15 @@
 </template>
 
 <script setup lang="ts">
-const isMobile = window.innerWidth < window.innerHeight;
+import { ref } from 'vue';
+
 const titles: string[] = ['Notre Solution', 'Conformité CRSD', 'Qui sommes-nous ?', 'Cas client', 'Certification'];
+const isMobile = window.innerWidth < window.innerHeight;
+const isMenuOpen = ref(false);
+
+const toggleMenu = () => {
+	isMenuOpen.value = !isMenuOpen.value;
+}
 </script>
 
 <style scoped lang="scss">
@@ -31,10 +41,16 @@ const titles: string[] = ['Notre Solution', 'Conformité CRSD', 'Qui sommes-nous
 		object-fit: contain;
 	}
 
-	.menu {
-		color: $primary-orange-light;
-		width: 30px;
-		height: 30px;
+	.button-menu {
+		border: none;
+		background: none;
+		cursor: pointer;
+
+		.menu {
+			color: $primary-orange-light;
+			width: 30px;
+			height: 30px;
+		}
 	}
 
 	.header-titles {
