@@ -4,7 +4,7 @@
 			<p class="subtitle">IaaS, PaaS, SaaS</p>
 			<h1 class="title" id="solution">Vous méritez mieux que du greenwashing !</h1>
 			<p><span style="color: #F77B0B"><b>CloudAssess</b>, un <b>outil open source</b></span> pour évaluer automatiquement <b>votre empreinte environnementale</b> en temps que fournisseur de services cloud.</p>
-			<button @click="redirectDemo" aria-label="Réserver une démo">Réserver votre démo !</button>
+			<button @click="redirectResilio()" aria-label="Réserver une démo">Réserver votre démo !</button>
 		</div>
 		<div class="image">
 			<img class="icons-background" src="@/assets/media/landing-icons-background.svg" alt="icons-background"/>
@@ -13,7 +13,7 @@
 </template>
 
 <script setup lang="ts">
-const redirectDemo = () => window.location.href = 'https://calendly.com/resilio-tech/demo-cloudassess';
+import { redirectResilio } from '@/utils.ts';
 </script>
 
 <style scoped lang="scss">

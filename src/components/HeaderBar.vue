@@ -65,6 +65,10 @@ const toggleMenu = () => {
 	.header-titles {
 		display: flex;
 		gap: $large-gap;
+
+		a {
+			font-size: 20px;
+		}
 	}
 }
 </style>
