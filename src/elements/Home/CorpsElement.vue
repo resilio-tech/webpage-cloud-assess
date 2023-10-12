@@ -12,8 +12,8 @@
 			</p>
 		</div>
 		<div class="stats">
-			<p>XXX collaborateurs</p>
-			<p>+ XX% des effectifs en R&D</p>
+			<p>26 collaborateurs</p>
+			<p>+25% des effectifs en R&D</p>
 			<a href="https://github.com/kleis-technology/cloud-assess">Github Repository</a>
 		</div>
 	</div>
