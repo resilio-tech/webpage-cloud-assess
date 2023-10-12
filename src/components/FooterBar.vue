@@ -4,7 +4,7 @@
 			<p class="subtitle" v-for="(subtitle, index) in subtitles" :key="subtitle">
 				{{ subtitle }} :
 				<br/>
-				<span class="subtitle-content" v-html="formatContent(content[index])"/>
+				<span class="subtitle-content" v-html="content[index]"/>
 			</p>
 			<div class="footer-logo">
 				<img src="@/assets/media/flag-switzerland.svg" alt="flag" class="flag"/>
@@ -22,12 +22,10 @@ const subtitles: string[] = [
 ]
 
 const content: string[] = [
-	'Resilio - EPFL Innovation Park, Bâtiment C, 1015 Lausanne, Suisse \n Kleis Technology Sarl, Rue Mauborget 1, 1003 Lausanne, Suisse',
+	'Resilio - EPFL Innovation Park, Bâtiment C, 1015 Lausanne, Suisse <br/> Kleis Technology Sarl, Rue Mauborget 1, 1003 Lausanne, Suisse',
 	'Email : contact@resilio.tech',
-	'UX Design: Marie Husson \n Developpement: Tanguy Pauvret \n Icones: Font Awesome, Freepik'
+	'UX Design: Marie Husson <br/> Developpement: <a style="text-decoration: underline; cursor:pointer;" href="https://github.com/Bima42">Tanguy Pauvret</a> <br/> Icones: Font Awesome, Freepik'
 ]
-
-const formatContent = (text: string) => text.replace(/\n/g, '<br/>');
 </script>
 
 <style scoped lang="scss">
@@ -65,7 +63,6 @@ const formatContent = (text: string) => text.replace(/\n/g, '<br/>');
 }
 
 @media screen and (max-width: 768px) {
-	// Styles for mobile screens
 	.footer {
 		padding: $large-padding;
 

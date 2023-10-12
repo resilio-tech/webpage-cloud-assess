@@ -1,7 +1,7 @@
 <template>
 	<div class="corps container">
 		<hr class="horizontal-line"/>
-		<div class="corps-logo">
+		<div id="about-us" class="corps-logo">
 			<img src="@/assets/media/resilio-logo.svg" alt="logo" class="logo"/>
 			<p>X</p>
 			<img src="@/assets/media/kleis-logo.svg" alt="logo" class="logo"/>

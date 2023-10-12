@@ -1,7 +1,7 @@
 <template>
 	<div class="csrd container">
 		<div class="content">
-			<h1>Corporate Sustainability Reporting Directive (CSRD)
+			<h1 id="crsd">Corporate Sustainability Reporting Directive (CSRD)
 				<br/>
 				Prenez de l’avance !
 			</h1>
@@ -12,16 +12,16 @@
 			<p>
 				<b>CloudAssess</b> a pour but d’afficher les impacts environnementaux des services cloud sur la base d'<b>une méthodologie commune, cohérente et transparente</b>.
 			</p>
-			<button @click="redirectContact" aria-label="Contactez nous">Contactez nous</button>
+			<button class="contact-us" aria-label="Contactez nous">
+				<a href="https://resilio-solutions.com/fr/contact/">Contactez nous</a>
+			</button>
 
 		</div>
 	</div>
 </template>
 
 <script setup lang="ts">
-const redirectContact = () => {
-	window.location.href = '/contact';
-}
+
 </script>
 
 <style scoped lang="scss">
@@ -39,6 +39,11 @@ const redirectContact = () => {
 		p {
 			width: 70%;
 			align-self: center;
+		}
+
+		a {
+			font-weight: bold;
+			color: white;
 		}
 	}
 

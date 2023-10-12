@@ -1,7 +1,7 @@
 <template>
 	<div class="customer-case container">
 		<div class="content">
-			<h1>Cas client</h1>
+			<h1 id="customer-case">Cas client</h1>
 			<div class="customer">
 				<img src="@/assets/media/exoscale-logo.svg" alt="customer" class="customer-img"/>
 				<p>Fournisseur Cloud basé en Suisse, 70 personnes- 7 zones</p>

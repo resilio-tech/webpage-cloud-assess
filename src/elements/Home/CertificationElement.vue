@@ -4,7 +4,7 @@
 			<div class="icon-container">
 				<img src="@/assets/media/customer-case-icon.svg" alt="customer-icon" class="customer-icon"/>
 			</div>
-			<h2 class="orange-text">Faites-vous certifier !</h2>
+			<h2 id="certification" class="orange-text">Faites-vous certifier !</h2>
 			<p>
 				Besoin d’appuyer la <b>fiabilité</b> de votre affichage environnemental ?
 				<br/>Faites appel à <b>CloudAssess</b> directement, via ses partenaires Kleis et Resilio.

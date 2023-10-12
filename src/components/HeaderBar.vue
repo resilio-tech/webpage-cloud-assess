@@ -1,4 +1,5 @@
 <template>
+	<MobileMenu v-if="isMobile && isMenuOpen" :titles="titles" :toggleMenu="toggleMenu"/>
 	<section class="header">
 		<img src="@/assets/media/logo-ca.svg" alt="logo" class="logo"/>
 		<button @click="toggleMenu" aria-label="menu" class="button-menu" v-if="isMobile">
@@ -6,8 +7,8 @@
 			<font-awesome-icon icon="fa-bars" class="menu" v-else/>
 		</button>
 		<ul class="header-titles" v-else>
-			<li class="header-title" v-for="title in titles" :key="title">
-				<a href="#" class="nav-link">{{ title }}</a>
+			<li class="header-title" v-for="item in titles" :key="item.title">
+				<a :href="'#' + item.key" class="nav-link">{{ item.title }}</a>
 			</li>
 		</ul>
 	</section>
@@ -15,8 +16,15 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
+import MobileMenu from '@/components/MobileMenu.vue';
 
-const titles: string[] = ['Notre Solution', 'Conformité CRSD', 'Qui sommes-nous ?', 'Cas client', 'Certification'];
+const titles: { key: string; title: string; }[] = [
+	{ key: 'solution', title: 'Notre Solution' },
+	{ key: 'crsd', title: 'Conformité CRSD' },
+	{ key: 'about-us', title: 'Qui sommes-nous ?' },
+	{ key: 'customer-case', title: 'Cas client' },
+	{ key: 'certification', title: 'Certification' }
+];
 const isMobile = window.innerWidth < window.innerHeight;
 const isMenuOpen = ref(false);
 
@@ -45,6 +53,7 @@ const toggleMenu = () => {
 		border: none;
 		background: none;
 		cursor: pointer;
+		z-index: 100;
 
 		.menu {
 			color: $primary-orange-light;
