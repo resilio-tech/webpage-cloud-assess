@@ -12,7 +12,6 @@
 						Les clients et clientes verront leur empreinte sur leur facture !
 					</p>
 				</div>
-				<img src="@/assets/media/customer-case-icon.svg" alt="customer-icon" class="customer-icon"/>
 			</div>
 		</div>
 	</div>

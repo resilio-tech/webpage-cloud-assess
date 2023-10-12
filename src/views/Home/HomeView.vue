@@ -5,6 +5,7 @@
 		<CSRDElement/>
 		<CorpsElement/>
 		<CustomerCaseElement/>
+		<CertificationElement/>
 	</section>
 </template>
 
@@ -14,6 +15,7 @@ import CloudAssessElement from '@/views/Home/elements/CloudAssessElement.vue';
 import CSRDElement from '@/views/Home/elements/CSRDElement.vue';
 import CorpsElement from '@/views/Home/elements/CorpsElement.vue';
 import CustomerCaseElement from '@/views/Home/elements/CustomerCaseElement.vue';
+import CertificationElement from '@/views/Home/elements/CertificationElement.vue';
 </script>
 
 <style scoped lang="scss">
