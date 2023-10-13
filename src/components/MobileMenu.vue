@@ -9,8 +9,6 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps } from 'vue';
-
 const props = defineProps<{
 	titles: { key: string; title: string; }[];
 	toggleMenu: () => void;

@@ -45,7 +45,7 @@ const toggleMenu = () => {
 	border-bottom: $primary-orange-light solid 1px;
 
 	img {
-		height: 40%;
+		height: 60%;
 		object-fit: contain;
 	}
 
@@ -68,6 +68,12 @@ const toggleMenu = () => {
 
 		a {
 			font-size: 20px;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		img {
+			height: 40%;
 		}
 	}
 }

@@ -19,7 +19,9 @@
 </template>
 
 <script setup lang="ts">
-import { redirectResilio } from '@/utils.ts';
+const redirectResilio = () => {
+	window.location.href = 'https://resilio-solutions.com/fr/contact/';
+}
 </script>
 
 <style scoped lang="scss">
