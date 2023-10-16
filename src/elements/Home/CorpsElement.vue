@@ -11,11 +11,6 @@
 				<b><span class="orange-text">CloudAssess</span></b> est issu d’une joint venture de <b>Resilio</b>, spécialiste de l’empreinte environnementale de l’IT, et de <b>Kleis Technology</b>, pionnier du LCA-as-Code.
 			</p>
 		</div>
-		<div class="stats">
-			<p>26 collaborateurs</p>
-			<p>+25% des effectifs en R&D</p>
-			<a href="https://github.com/kleis-technology/cloud-assess">Github Repository</a>
-		</div>
 	</div>
 </template>
 
@@ -31,7 +26,7 @@
 	align-items: center;
 
 	.horizontal-line {
-		width: 50%;
+		width: 70%;
 		height: 1px;
 		border: none;
 		background: $primary-orange-light;
@@ -41,10 +36,11 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		margin-top: $medium-padding;
 
 		.logo {
 			width: 25%;
-			height: 100px;
+			height: 130px;
 		}
 
 		p {
@@ -62,25 +58,6 @@
 		}
 	}
 
-	.stats {
-		display: flex;
-		width: 100%;
-		justify-content: center;
-		background: $primary-orange-light;
-		padding: $xlarge-padding;
-		gap: $medium-gap;
-
-		p, a {
-			text-align: center;
-			color: white;
-			font-weight: bold;
-		}
-
-		a {
-			text-decoration: underline;
-			cursor: pointer;
-		}
-	}
 
 	@media screen and (max-width: 768px) {
 		.corps-logo {
@@ -98,11 +75,6 @@
 			p {
 				width: 100%;
 			}
-		}
-
-		.stats {
-			flex-direction: column;
-			padding: $medium-padding;
 		}
 	}
 }

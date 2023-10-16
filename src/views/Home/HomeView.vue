@@ -4,6 +4,7 @@
 		<CloudAssessElement/>
 		<CSRDElement/>
 		<CorpsElement/>
+		<StatsElement/>
 		<CustomerCaseElement/>
 		<CertificationElement/>
 	</section>
@@ -16,6 +17,7 @@ import CSRDElement from '@/elements/Home/CSRDElement.vue';
 import CorpsElement from '@/elements/Home/CorpsElement.vue';
 import CustomerCaseElement from '@/elements/Home/CustomerCaseElement.vue';
 import CertificationElement from '@/elements/Home/CertificationElement.vue';
+import StatsElement from '@/elements/Home/StatsElement.vue';
 </script>
 
 <style scoped lang="scss">

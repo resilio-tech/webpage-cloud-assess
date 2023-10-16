@@ -4,11 +4,11 @@
 			<h1 id="customer-case">Cas client</h1>
 			<div class="customer">
 				<img src="@/assets/media/exoscale-logo.svg" alt="customer" class="customer-img"/>
-				<p>Fournisseur Cloud basé en Suisse, 70 personnes- 7 zones</p>
+				<p>Fournisseur Cloud basé en Suisse, 70 personnes - 7 zones</p>
 				<div class="customer-infos">
-					<CardList :list="cardData"/>
+					<CardList :list="cardData" :width="'50%'"/>
 					<p>
-						Janvier 2024: <br/><br/>
+						Janvier 2024 : <br/><br/>
 						Les clients et clientes verront leur empreinte sur leur facture !
 					</p>
 				</div>
@@ -34,14 +34,21 @@ const cardData = [
 	justify-content: center;
 	align-items: center;
 
+	h1 {
+		font-size: 40px;
+	}
+
 	.customer {
-		width: 70%;
+		width: 60%;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		gap: $medium-gap;
 
+		img {
+			height: 100px;
+		}
 		p {
 			text-align: center;
 			font-weight: bold;
@@ -50,6 +57,11 @@ const cardData = [
 
 		.customer-infos {
 			display: flex;
+			justify-content: space-between;
+
+			p {
+				width: 50%;
+			}
 		}
 	}
 

@@ -1,5 +1,6 @@
 <template>
 	<div class="card" :style="updateCardStyle">
+		<h4 v-if="props.title">{{ props.title }}</h4>
 		<ul>
 			<li :style="updateListItemStyle" v-for="item in props.list" :key="item" v-html="item"/>
 		</ul>
@@ -10,13 +11,16 @@
 import { computed } from 'vue';
 
 const props = defineProps<{
+	title?: string;
 	list: string[];
 	backgroundColor?: string;
 	color?: string;
+	width?: string;
 }>()
 
 const updateCardStyle = computed(() => ({
 	backgroundColor: props.backgroundColor || 'white',
+	width: props.width || '20%',
 }))
 
 const updateListItemStyle = computed(() => ({

@@ -3,8 +3,11 @@
 		<div class="content">
 			<p class="subtitle">IaaS, PaaS, SaaS</p>
 			<h1 class="title" id="solution">Vous méritez mieux que du greenwashing !</h1>
-			<p><span style="color: #F77B0B"><b>CloudAssess</b>, un <b>outil open source</b></span> pour évaluer automatiquement <b>votre empreinte environnementale</b> en temps que fournisseur de services cloud.</p>
-			<button @click="redirectResilio" aria-label="Réserver une démo">Réserver votre démo !</button>
+			<p><b style="color: #F77B0B">CloudAssess</b>, un <b style="color: #F77B0B">outil open source</b> pour évaluer automatiquement <b>votre empreinte environnementale</b> en temps que fournisseur de services cloud.</p>
+			<div class="actions">
+				<button @click="redirectRepository" aria-label="Code source">Code source</button>
+				<button @click="redirectResilio" aria-label="Réserver une démo">Réserver votre démo !</button>
+			</div>
 		</div>
 		<div class="image">
 			<img class="icons-background" src="@/assets/media/landing-icons-background.svg" alt="icons-background"/>
@@ -15,6 +18,9 @@
 <script setup lang="ts">
 const redirectResilio = () => {
 	window.location.href = 'https://resilio-solutions.com/fr/contact/';
+}
+const redirectRepository = () => {
+	window.location.href = 'https://github.com/kleis-technology/cloud-assess';
 }
 </script>
 
@@ -39,6 +45,12 @@ const redirectResilio = () => {
 	.subtitle {
 		font-weight: bold;
 		font-size: 30px;
+	}
+
+	.actions {
+		display: flex;
+		justify-content: center;
+		gap: $large-gap;
 	}
 }
 

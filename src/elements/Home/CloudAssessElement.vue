@@ -3,9 +3,9 @@
 		<div class="content">
 			<h1>CloudAssess, c'est quoi ?</h1>
 			<div class="card-container">
-				<CardList :list="firstList"/>
-				<CardList :list="secondList"/>
-				<CardList :list="thirdList" :backgroundColor="'#F77B0B'" :color="'white'"/>
+				<CardList :title="'L’empreinte de vos services ...'" :list="firstList"/>
+				<CardList :title="'... facilement ...'" :list="secondList"/>
+				<CardList :title="'... ouverte et conforme.'" :list="thirdList"/>
 			</div>
 		</div>
 	</div>
@@ -15,9 +15,9 @@
 import CardList from '@/components/CardList.vue';
 
 const firstList: string[] = [
-	'L’<b>empreinte</b> de votre service à l’heure, au jour, au mois,...',
+	'À l’heure, au jour, au mois, ...',
 	'Aligné aux <b>besoins de conformité</b> de vos clients et clientes',
-	'À intégrer dans vos <b>factures</b>, rapports, dashboards <b>GreenOps</b>,...'
+	'À intégrer dans vos <b>factures</b>, rapports, dashboards <b>GreenOps</b>, ...'
 ]
 
 const secondList: string[] = [
@@ -43,13 +43,12 @@ const thirdList: string[] = [
 	.content h1 {
 		color: white;
 		text-align: center;
-		font-weight: normal;
+		font-weight: 600;
 	}
 
 	.card-container {
 		display: flex;
-		justify-content: space-between;
-		gap: $large-gap;
+		justify-content: space-around;
 	}
 }
 @media screen and (max-width: 768px) {

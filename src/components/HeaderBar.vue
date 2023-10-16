@@ -44,6 +44,12 @@ const toggleMenu = () => {
 	padding: 10px;
 	border-bottom: $primary-orange-light solid 1px;
 
+	a {
+		font-family: 'Lexend', sans-serif;
+		font-weight: 600;
+		text-decoration: none;
+	}
+
 	img {
 		height: 60%;
 		object-fit: contain;

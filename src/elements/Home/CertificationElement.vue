@@ -23,14 +23,19 @@
 	justify-content: center;
 	align-items: center;
 
-	.icon-container {
-		display: flex;
-		justify-content: center;
+	.content {
+		padding: 0 0 $xlarge-padding 0;
+
+		.icon-container {
+			display: flex;
+			justify-content: center;
+		}
+
+		h2 {
+			text-align: center;
+		}
 	}
 
-	h2 {
-		text-align: center;
-	}
 }
 
 </style>

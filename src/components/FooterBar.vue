@@ -22,9 +22,9 @@ const subtitles: string[] = [
 ]
 
 const content: string[] = [
-	'Resilio - EPFL Innovation Park, Bâtiment C, 1015 Lausanne, Suisse <br/> Kleis Technology Sarl, Rue Mauborget 1, 1003 Lausanne, Suisse',
+	'<a href="https://resilio-solutions.com">Resilio</a> SA - EPFL Innovation Park, Bâtiment C, 1015 Lausanne, Suisse <br/> <a href="https://kleis.ch">Kleis</a> Technology Sarl, Rue Mauborget 1, 1003 Lausanne, Suisse',
 	'Email : contact@resilio.tech',
-	'UX Design: Marie Husson <br/> Developpement: <a style="text-decoration: underline; cursor:pointer;" href="https://github.com/Bima42">Tanguy Pauvret</a> <br/> Icones: Font Awesome, Freepik'
+	'UX Design: Marie Husson <br/> Développement: <a style="" href="https://github.com/Bima42">Tanguy Pauvret</a>, Resilio SA <br/> Icones: Font Awesome, Freepik'
 ]
 </script>
 
@@ -35,6 +35,11 @@ const content: string[] = [
 	background: $gray-light;
 	border-top: $primary-orange-light solid 1px;
 	font-size: 12px;
+
+	a {
+		text-decoration: underline;
+		cursor:pointer;
+	}
 
 	.footer-content {
 		display: flex;

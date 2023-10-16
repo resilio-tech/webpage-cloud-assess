@@ -13,7 +13,6 @@
 				<b>CloudAssess</b> a pour but d’afficher les impacts environnementaux des services cloud sur la base d'<b>une méthodologie commune, cohérente et transparente</b>.
 			</p>
 			<button @click="redirectResilio" class="contact-us" aria-label="Contactez nous">Contactez nous</button>
-
 		</div>
 	</div>
 </template>
@@ -37,8 +36,12 @@ const redirectResilio = () => {
 		width: 80%;
 
 		p {
-			width: 70%;
+			width: 80%;
 			align-self: center;
+		}
+
+		.contact-us {
+			width: 30%;
 		}
 	}
 
