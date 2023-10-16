@@ -46,6 +46,7 @@ const props = defineProps<{
 
 			a {
 				font-weight: bold;
+				text-decoration: none;
 			}
 		}
 
