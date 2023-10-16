@@ -10,17 +10,21 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 
+const isMobile = window.innerWidth < 768;
+
 const props = defineProps<{
 	title?: string;
 	list: string[];
 	backgroundColor?: string;
 	color?: string;
 	width?: string;
+	padding?: string;
 }>()
 
 const updateCardStyle = computed(() => ({
 	backgroundColor: props.backgroundColor || 'white',
-	width: props.width || '20%',
+	width: props.width ? props.width : isMobile ? '100%' : '20%',
+	padding: props.padding || '15px 50px',
 }))
 
 const updateListItemStyle = computed(() => ({
@@ -31,7 +35,6 @@ const updateListItemStyle = computed(() => ({
 <style scoped lang="scss">
 .card {
 	border-radius: 10px;
-	padding: $medium-padding $xlarge-padding;
 
 	ul {
 		list-style-type: disc;
@@ -39,6 +42,12 @@ const updateListItemStyle = computed(() => ({
 		li {
 			padding-top: 15px;
 		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.card {
+		padding: $medium-padding;
 	}
 }
 </style>

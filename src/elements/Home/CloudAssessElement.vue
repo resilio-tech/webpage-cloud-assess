@@ -54,11 +54,13 @@ const thirdList: string[] = [
 @media screen and (max-width: 768px) {
 	.cloud-assess {
 		.content h1 {
-			font-size: 20px;
+			font-size: 28px;
 		}
 
 		.card-container {
 			flex-direction: column;
+			padding: 0 $xlarge-padding;
+			gap: $xlarge-gap;
 		}
 	}
 }

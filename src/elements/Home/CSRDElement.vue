@@ -52,6 +52,10 @@ const redirectResilio = () => {
 			p {
 				width: 100%;
 			}
+
+			.contact-us {
+				width: 40%;
+			}
 		}
 	}
 }

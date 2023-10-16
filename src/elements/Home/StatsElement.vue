@@ -36,6 +36,8 @@
 @media screen and (max-width: 768px) {
 	.stats {
 		flex-direction: column;
+		justify-content: space-around;
+		gap: $large-gap;
 		padding: $medium-padding;
 	}
 }

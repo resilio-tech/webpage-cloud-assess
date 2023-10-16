@@ -6,7 +6,7 @@
 				<img src="@/assets/media/exoscale-logo.svg" alt="customer" class="customer-img"/>
 				<p>Fournisseur Cloud basé en Suisse, 70 personnes - 7 zones</p>
 				<div class="customer-infos">
-					<CardList :list="cardData" :width="'50%'"/>
+					<CardList :list="cardData" :width="!isMobile ? '50%' : ''" :padding="!isMobile ? '' : '15px'"/>
 					<p>
 						Janvier 2024 : <br/><br/>
 						Les clients et clientes verront leur empreinte sur leur facture !
@@ -20,6 +20,7 @@
 <script setup lang="ts">
 import CardList from '@/components/CardList.vue';
 
+const isMobile = window.innerWidth < 768;
 const cardData = [
 	'Une instance <span class="orange-text"><b>CloudAssess</b></span> est déployée sur l’infra.',
 	'Les rapports d’empreinte sont retournés dans le data lake.'
@@ -71,6 +72,10 @@ const cardData = [
 
 			.customer-infos {
 				flex-direction: column;
+
+				p {
+					width: 100%;
+				}
 			}
 
 			p {
