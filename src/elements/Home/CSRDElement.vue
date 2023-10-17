@@ -10,7 +10,7 @@
 				Pour permettre à leurs clients et clientes de respecter cette norme, les fournisseurs de services cloud vont devoir afficher les impacts environnementaux associés aux services proposés.
 			</p>
 			<p>
-				<b>CloudAssess</b> a pour but d’afficher les impacts environnementaux des services cloud sur la base d'<b>une méthodologie commune, cohérente et transparente</b>.
+				<b>Cloud<span class="orange-text">Assess</span></b> a pour but d’afficher les impacts environnementaux des services cloud sur la base d'<b>une méthodologie commune, cohérente et transparente</b>.
 			</p>
 			<button @click="redirectResilio" class="contact-us" aria-label="Contactez nous">Contactez nous</button>
 		</div>

@@ -8,7 +8,7 @@
 		</div>
 		<div class="content">
 			<p>
-				<b><span class="orange-text">CloudAssess</span></b> est issu d’une joint venture de <b>Resilio</b>, spécialiste de l’empreinte environnementale de l’IT, et de <b>Kleis Technology</b>, pionnier du LCA-as-Code.
+				<b>Cloud<span class="orange-text">Assess</span></b> est issu d’une joint venture de <b>Resilio</b>, spécialiste de l’empreinte environnementale de l’IT, et de <b>Kleis Technology</b>, pionnier du LCA-as-Code.
 			</p>
 		</div>
 	</div>
