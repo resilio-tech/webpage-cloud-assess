@@ -25,6 +25,11 @@ const redirectResilio = () => {
 
 <style scoped lang="scss">
 .csrd {
+	background-image: url('@/assets/media/csrd-background.svg');
+	background-size: 110% auto;
+	background-position: center;
+	background-repeat: no-repeat;
+
 	display: flex;
 	justify-content: center;
 

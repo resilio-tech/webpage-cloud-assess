@@ -24,7 +24,7 @@ const props = defineProps<{
 const updateCardStyle = computed(() => ({
 	backgroundColor: props.backgroundColor || 'white',
 	width: props.width ? props.width : isMobile ? '100%' : '20%',
-	padding: props.padding || '15px 50px',
+	padding: props.padding || '30px 50px 20px 50px',
 }))
 
 const updateListItemStyle = computed(() => ({

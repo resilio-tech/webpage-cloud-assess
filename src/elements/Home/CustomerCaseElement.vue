@@ -22,8 +22,8 @@ import CardList from '@/components/CardList.vue';
 
 const isMobile = window.innerWidth < 768;
 const cardData = [
-	'Une instance <b>Cloud<span class="orange-text">Assess</span></b> est déployée sur l’infra.',
-	'Le flux de données d’usage pour la facturation est copié vers <b>Cloud<span class="orange-text">Assess</span></b>',
+	'Une instance <b>Cloud<span class="orange-text">Assess</span></b> est déployée sur l’infrastrucure Exoscale.',
+	'Le flux de données d’usage pour la facturation est copié vers <b>Cloud<span class="orange-text">Assess</span></b>.',
 	'Les rapports d’empreinte sont retournés dans le data lake.'
 ]
 </script>

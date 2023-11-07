@@ -1,7 +1,7 @@
 <template>
 	<div class="cloud-assess container">
 		<div class="content">
-			<h1>CloudAssess, c'est quoi ?</h1>
+			<h1><span class="black-text">Cloud</span>Assess, c'est quoi ?</h1>
 			<div class="card-container">
 				<CardList :title="'L’empreinte de vos services ...'" :list="firstList"/>
 				<CardList :title="'... facilement ...'" :list="secondList"/>
@@ -21,7 +21,7 @@ const firstList: string[] = [
 ]
 
 const secondList: string[] = [
-	'Votre <b>instance <span style="color: #F77B0B">CloudAssess</span></b> en Image Docker, self-hosted ou managée',
+	'Votre <b>instance <span class="orange-text">Cloud</span>Assess</b> en Image Docker, self-hosted ou managée',
 	'<b>Certification</b> optionnelle',
 	'<b>Support premium',
 	'<b>Notice méthodologique</b> à partager'

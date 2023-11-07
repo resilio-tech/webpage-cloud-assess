@@ -7,7 +7,7 @@
 			<h2 id="certification" class="orange-text">Faites-vous certifier !</h2>
 			<p>
 				Besoin d’appuyer la <b>fiabilité</b> de votre affichage environnemental ?
-				<br/>Faites appel à <b>Cloud<span class="orange-text">Assess</span></b> directement, via ses partenaires Kleis et Resilio.
+				<br/>Faites appel à <b>Cloud<span class="orange-text">Assess</span></b> directement, via ses partenaires <a href="https://kleis.ch">Kleis</a> et <a href="https://resilio-solutions.com">Resilio</a>.
 			</p>
 		</div>
 	</div>

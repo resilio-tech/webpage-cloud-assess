@@ -1,7 +1,7 @@
 <template>
 	<div class="stats container">
-		<p>26 collaborateurs</p>
-		<p>+25% des effectifs en R&D</p>
+		<p>2 entreprises</p>
+		<p>Une équipe pluridisciplinaire dédiée</p>
 		<a href="https://github.com/kleis-technology/cloud-assess">Github Repository</a>
 	</div>
 </template>

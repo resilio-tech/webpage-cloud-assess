@@ -46,12 +46,11 @@ const toggleMenu = () => {
 
 	a {
 		font-family: 'Lexend', sans-serif;
-		font-weight: 600;
 		text-decoration: none;
 	}
 
 	img {
-		height: 60%;
+		height: 100%;
 		object-fit: contain;
 	}
 
@@ -79,7 +78,7 @@ const toggleMenu = () => {
 
 	@media screen and (max-width: 768px) {
 		img {
-			height: 40%;
+			height: 60%;
 		}
 	}
 }

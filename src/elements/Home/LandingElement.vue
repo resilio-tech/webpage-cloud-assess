@@ -3,7 +3,7 @@
 		<div class="content">
 			<p class="subtitle">IaaS, PaaS, SaaS</p>
 			<h1 class="title" id="solution">Vous méritez mieux que du greenwashing !</h1>
-			<p><b style="color: #F77B0B">CloudAssess</b>, un <b style="color: #F77B0B">outil open source</b> pour évaluer automatiquement <b>votre empreinte environnementale</b> en temps que fournisseur de services cloud.</p>
+			<p><b>Cloud<span class="orange-text">Assess</span></b>, un <b style="color: #F77B0B">outil open source</b> pour évaluer automatiquement <b>votre empreinte environnementale</b> en temps que fournisseur de services cloud.</p>
 			<div class="actions">
 				<button @click="redirectRepository" aria-label="Code source">Code source</button>
 				<button @click="redirectResilio" aria-label="Réserver une démo">Réserver votre démo !</button>
