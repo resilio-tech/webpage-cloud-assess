@@ -40,8 +40,8 @@ const toggleMenu = () => {
 	align-items: center;
 	background: $gray-light;
 	width: 100%;
-	height: 130px;
-	padding: 10px;
+	height: 100px;
+	padding: 20px;
 	border-bottom: $primary-orange-light solid 1px;
 
 	a {
