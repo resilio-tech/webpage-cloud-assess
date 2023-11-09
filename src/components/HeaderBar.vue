@@ -45,7 +45,7 @@ const toggleMenu = () => {
 	border-bottom: $primary-orange-light solid 1px;
 
 	a {
-		font-family: 'Lexend', sans-serif;
+		font-family: $font-family-lexend;
 		text-decoration: none;
 	}
 
@@ -73,6 +73,7 @@ const toggleMenu = () => {
 
 		a {
 			font-size: 20px;
+			font-weight: 500;
 		}
 	}
 

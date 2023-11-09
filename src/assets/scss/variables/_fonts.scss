@@ -1,20 +1,4 @@
-@font-face {
-	font-family: 'Lexend';
-	font-style: normal;
-	font-weight: 800;
-	src: url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;800&display=swap');
-}
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;900&family=Roboto:wght@400;900&display=swap');
 
-@font-face {
-	font-family: 'Lexend';
-	font-style: normal;
-	font-weight: 600;
-	src: url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;600;800&display=swap');
-}
-
-@font-face {
-	font-family: 'Roboto';
-	font-style: normal;
-	font-weight: 400;
-	src: url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;600;800&family=Roboto&display=swap');
-}
+$font-family-lexend: 'Lexend', sans-serif;
+$font-family-roboto: 'Roboto', sans-serif;
