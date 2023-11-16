@@ -36,6 +36,11 @@ const updateListItemStyle = computed(() => ({
 .card {
 	border-radius: 10px;
 
+	h4 {
+		font-family: 'Roboto', sans-serif;
+		font-weight: bold;
+	}
+
 	ul {
 		list-style-type: disc;
 
