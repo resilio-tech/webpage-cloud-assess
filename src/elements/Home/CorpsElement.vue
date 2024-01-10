@@ -11,15 +11,16 @@
 			</a>
 		</div>
 		<div class="content">
-			<p>
-				<b>Cloud<span class="orange-text">Assess</span></b> est issu d’une joint venture de <b><a href="https://resilio-solutions.com">Resilio</a></b>, spécialiste de l’empreinte environnementale de l’IT, et de <b><a href="https://kleis.ch">Kleis Technology</a></b>, pionnier du LCA-as-Code.
-			</p>
+			<p><VNodeRenderer :node="translate('cloudAssess.corps', changes)"/></p>
 		</div>
 	</div>
 </template>
 
 <script setup lang="ts">
 
+import { VNodeRenderer } from '@/components/VNodeRenderer';
+import { translate } from '@/translation/translate';
+import { changes } from '@/translation/changes';
 </script>
 
 <style scoped lang="scss">
