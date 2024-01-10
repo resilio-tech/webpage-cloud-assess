@@ -17,9 +17,10 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import MobileMenu from '@/components/MobileMenu.vue';
+import { translate } from '../translation/translate'
 
 const titles: { key: string; title: string; }[] = [
-	{ key: 'solution', title: 'Notre Solution' },
+	{ key: 'solution', title: translate('header.title.solution') as string },
 	{ key: 'crsd', title: 'Conformité CRSD' },
 	{ key: 'about-us', title: 'Qui sommes-nous ?' },
 	{ key: 'customer-case', title: 'Cas client' },
