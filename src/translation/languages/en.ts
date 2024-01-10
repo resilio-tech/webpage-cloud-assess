@@ -2,10 +2,14 @@ import { Language } from '../translate';
 
 export const en: Language = {
 	'getAhead': 'Get ahead of the game !',
+	'getCertified': 'Get certified !',
 
 	'button.bookDemo': 'Book a demo !',
 	'button.contactUs': 'Contact Us',
 	'button.sourceCode': 'Source Code',
+
+	'certification.resume': `Do you need to support the &bold(reliability) of your environmental display? 
+		&break() Call on &cloudAssessBlackOrange() directly, via its partners &linkKleis(Kleis) and &linkResilio(Resilio).`,
 
 	'cloudAssess.whatIsIt': 'What is &cloudAssessBlackWhite() ?',
 	'cloudAssess.what.footprintServices.step1.title': 'The footprint of your services ...',

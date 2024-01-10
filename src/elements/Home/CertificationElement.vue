@@ -4,17 +4,17 @@
 			<div class="icon-container">
 				<img src="@/assets/media/customer-case-icon.svg" alt="customer-icon" class="customer-icon"/>
 			</div>
-			<h2 id="certification" class="orange-text">Faites-vous certifier !</h2>
-			<p>
-				Besoin d’appuyer la <b>fiabilité</b> de votre affichage environnemental ?
-				<br/>Faites appel à <b>Cloud<span class="orange-text">Assess</span></b> directement, via ses partenaires <a href="https://kleis.ch">Kleis</a> et <a href="https://resilio-solutions.com">Resilio</a>.
-			</p>
+			<h2 id="certification" class="orange-text">{{ translate('getCertified') }}</h2>
+			<p><VNodeRenderer :node="translate('certification.resume', changes)"/></p>
 		</div>
 	</div>
 </template>
 
 <script setup lang="ts">
 
+import { translate } from '@/translation/translate.ts';
+import { VNodeRenderer } from '@/components/VNodeRenderer';
+import { changes } from '@/translation/changes';
 </script>
 
 <style scoped lang="scss">

@@ -2,10 +2,14 @@ import { Language } from '../translate';
 
 export const fr: Language = {
 	'getAhead': 'Prenez de l\'avance !',
+	'getCertified': 'Faites-vous certifier !',
 
 	'button.bookDemo': 'Réserver votre démo !',
 	'button.contactUs': 'Contactez-nous',
 	'button.sourceCode': 'Code Source',
+
+	'certification.resume': `Besoin d’appuyer la &bold(fiabilité) de votre affichage environnemental ? 
+		&break() Faites appel à \'&cloudAssessBlackOrange() directement, via ses partenaires &linkKleis(Kleis) et &linkResilio(Resilio).`,
 
 	'cloudAssess.whatIsIt': '&cloudAssessBlackWhite(), c\'est quoi ?',
 
