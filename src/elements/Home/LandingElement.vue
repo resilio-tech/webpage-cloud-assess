@@ -16,9 +16,9 @@
 </template>
 
 <script setup lang="ts">
-import { translate } from '../../translation/translate';
-import { changes } from '../../translation/changes';
-import { VNodeRenderer } from '../../components/VNodeRenderer';
+import { translate } from '@/translation/translate';
+import { changes } from '@/translation/changes';
+import { VNodeRenderer } from '@/components/VNodeRenderer';
 
 const redirectResilio = () => {
 	window.location.href = 'https://resilio-solutions.com/fr/contact/';

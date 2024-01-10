@@ -4,6 +4,29 @@ export const fr: Language = {
 	'button.bookDemo': 'Réserver votre démo !',
 	'button.sourceCode': 'Code Source',
 
+	'cloudAssess.whatIsIt': '&cloudAssessBlackWhite(), c\'est quoi ?',
+
+	'cloudAssess.what.footprintServices.step1.title': 'L\'empreinte de vos services ...',
+	'cloudAssess.what.footprintServices.step1.point1': 'À l’heure, au jour, au mois, ...',
+	'cloudAssess.what.footprintServices.step1.point2': 'Aligné aux &bold(besoins de conformité) de vos clients et clientes',
+	'cloudAssess.what.footprintServices.step1.point3': 'À intégrer dans vos &bold(factures), rapports, dashboards &bold(GreenOps), ...',
+
+	'cloudAssess.what.footprintServices.step2.title': '... facilement ...',
+	'cloudAssess.what.footprintServices.step2.point1': 'Votre instance &cloudAssessBlackOrange() en Image Docker, self-hosted ou managée',
+	'cloudAssess.what.footprintServices.step2.point2': '&bold(Certification) optionnelle',
+	'cloudAssess.what.footprintServices.step2.point3': '&bold(Support premium)',
+	'cloudAssess.what.footprintServices.step2.point4': '&bold(Notice méthodologique) à partager',
+
+	'cloudAssess.what.footprintServices.step3.title': '... ouverte et conforme',
+	'cloudAssess.what.footprintServices.step3.point1': 'Conforme aux normes de l’Analyse de Cycle de Vie &bold(ISO 14040/14044, PEF, RCP Cloud)',
+	'cloudAssess.what.footprintServices.step3.point2': 'Méthodologie &bold(ouverte et transparente)',
+	'cloudAssess.what.footprintServices.step3.point3': 'Outil &bold(automatisé)',
+	'cloudAssess.what.footprintServices.step3.point4': 'Bibliothèques de &bold(modèles conformes)',
+
+
+
+
+
 	'header.title.solution': 'Notre Solution',
 	'header.title.csrd': 'Conformité CSRD',
 	'header.title.whoAreWe': 'Qui Sommes Nous ?',
@@ -12,5 +35,5 @@ export const fr: Language = {
 
 	'landing.title.iaas': 'Iaas, Paas, Saas',
 	'landing.title.greenwashing': 'Vous méritez mieux que du greenwashing!',
-	'landing.description': '&cloudAssess(), un &boldOrange(outil open source) pour évaluer automatiquement &bold(votre empreinte environnementale) en tant que fournisseur de services cloud.'
+	'landing.description': '&cloudAssessBlackOrange(), un &boldOrange(outil open source) pour évaluer automatiquement &bold(votre empreinte environnementale) en tant que fournisseur de services cloud.'
 }

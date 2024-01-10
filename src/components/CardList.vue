@@ -2,24 +2,33 @@
 	<div class="card" :style="updateCardStyle">
 		<h4 v-if="props.title">{{ props.title }}</h4>
 		<ul>
-			<li :style="updateListItemStyle" v-for="item in props.list" :key="item" v-html="item"/>
+			<li v-for="(item, index) in props.list" :key="index" :style="updateListItemStyle">
+				<template v-if="isVNode(item)">
+					<VNodeRenderer :node="item" />
+				</template>
+				<span v-else v-html="item"></span>
+			</li>
 		</ul>
 	</div>
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue';
+import { computed, VNode } from 'vue';
+import { VNodeRenderer } from '@/components/VNodeRenderer';
+import { TranslatedString, TranslatedStringList } from '@/types/TranslatedStringList';
 
 const isMobile = window.innerWidth < 768;
 
 const props = defineProps<{
-	title?: string;
-	list: string[];
+	title?: TranslatedString;
+	list: TranslatedStringList;
 	backgroundColor?: string;
 	color?: string;
 	width?: string;
 	padding?: string;
 }>()
+
+const isVNode = (item: any): item is VNode => item && item.__v_isVNode;
 
 const updateCardStyle = computed(() => ({
 	backgroundColor: props.backgroundColor || 'white',

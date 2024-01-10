@@ -1,11 +1,14 @@
 <template>
 	<div class="cloud-assess container">
 		<div class="content">
-			<h1><span class="black-text">Cloud</span>Assess, c'est quoi ?</h1>
+			<h1><VNodeRenderer :node="title"/></h1>
 			<div class="card-container">
-				<CardList :title="'L’empreinte de vos services ...'" :list="firstList"/>
-				<CardList :title="'... facilement ...'" :list="secondList"/>
-				<CardList :title="'... ouverte et conforme.'" :list="thirdList"/>
+				<CardList
+					v-for="(list, index) in lists"
+					:key="index"
+					:title="cardListTitles[index]"
+					:list="list"
+				/>
 			</div>
 		</div>
 	</div>
@@ -13,26 +16,39 @@
 
 <script setup lang="ts">
 import CardList from '@/components/CardList.vue';
+import { translate } from '@/translation/translate';
+import { changes } from '@/translation/changes';
+import { VNodeRenderer } from '@/components/VNodeRenderer';
+import { TranslatedStringList } from '@/types/TranslatedStringList';
 
-const firstList: string[] = [
-	'À l’heure, au jour, au mois, ...',
-	'Aligné aux <b>besoins de conformité</b> de vos clients et clientes',
-	'À intégrer dans vos <b>factures</b>, rapports, dashboards <b>GreenOps</b>, ...'
+const title = translate('cloudAssess.whatIsIt', changes);
+
+const cardListTitles: TranslatedStringList = [
+	translate('cloudAssess.what.footprintServices.step1.title') as string,
+	translate('cloudAssess.what.footprintServices.step2.title') as string,
+	translate('cloudAssess.what.footprintServices.step3.title') as string,
+]
+const firstList: TranslatedStringList = [
+	translate('cloudAssess.what.footprintServices.step1.point1') as string,
+	translate('cloudAssess.what.footprintServices.step1.point2', changes),
+	translate('cloudAssess.what.footprintServices.step1.point3', changes),
 ]
 
-const secondList: string[] = [
-	'Votre <b>instance <span class="orange-text">Cloud</span>Assess</b> en Image Docker, self-hosted ou managée',
-	'<b>Certification</b> optionnelle',
-	'<b>Support premium',
-	'<b>Notice méthodologique</b> à partager'
+const secondList: TranslatedStringList = [
+	translate('cloudAssess.what.footprintServices.step2.point1', changes),
+	translate('cloudAssess.what.footprintServices.step2.point2', changes),
+	translate('cloudAssess.what.footprintServices.step2.point3', changes),
+	translate('cloudAssess.what.footprintServices.step2.point4', changes),
 ]
 
-const thirdList: string[] = [
-	'Conforme aux normes de l’<b>Analyse de Cycle de Vie (ISO 14040/14044, PEF, RCP Cloud)</b>',
-	'Méthodologie <b>ouverte et transparente</b>',
-	'Outil <b>automatisé</b>',
-	'Bibliothèques de <b>modèles conformes</b>'
+const thirdList: TranslatedStringList = [
+	translate('cloudAssess.what.footprintServices.step3.point1', changes),
+	translate('cloudAssess.what.footprintServices.step3.point2', changes),
+	translate('cloudAssess.what.footprintServices.step3.point3', changes),
+	translate('cloudAssess.what.footprintServices.step3.point4', changes),
 ]
+
+const lists = [firstList, secondList, thirdList];
 </script>
 
 <style scoped lang="scss">
