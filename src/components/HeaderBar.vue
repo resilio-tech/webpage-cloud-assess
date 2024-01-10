@@ -17,14 +17,14 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import MobileMenu from '@/components/MobileMenu.vue';
-import { translate } from '../translation/translate'
+import { translate } from '../translation/translate';
 
 const titles: { key: string; title: string; }[] = [
 	{ key: 'solution', title: translate('header.title.solution') as string },
-	{ key: 'crsd', title: 'Conformité CRSD' },
-	{ key: 'about-us', title: 'Qui sommes-nous ?' },
-	{ key: 'customer-case', title: 'Cas client' },
-	{ key: 'certification', title: 'Certification' }
+	{ key: 'crsd', title: translate('header.title.csrd') as string },
+	{ key: 'about-us', title: translate('header.title.whoAreWe') as string },
+	{ key: 'customer-case', title: translate('header.title.caseStudies') as string },
+	{ key: 'certification', title: translate('header.title.certification') as string }
 ];
 const isMobile = window.innerWidth < window.innerHeight;
 const isMenuOpen = ref(false);

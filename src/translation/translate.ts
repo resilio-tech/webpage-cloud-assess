@@ -35,8 +35,7 @@ export function translate(index: string, change?: TranslateChange | string, lang
 					const match = seq.match(new RegExp(`&${itr}[(]([^()]*)[)]`));
 					if (match) {
 						const c = translateChange[itr];
-						const val = typeof c === 'string' ? c : c(match[1]);
-						return val;
+						return typeof c === 'string' ? c : c(match[1]);
 					}
 				}
 				return seq.replace(/&\S+\((.*)\)/, '$1');
