@@ -2,22 +2,26 @@
 	<MobileMenu v-if="isMobile && isMenuOpen" :titles="titles" :toggleMenu="toggleMenu"/>
 	<section class="header">
 		<img src="../../assets/media/logo-ca.svg" alt="logo" class="logo"/>
-		<button @click="toggleMenu" aria-label="menu" class="button-menu" v-if="isMobile">
-			<font-awesome-icon icon="fa-x" class="menu" v-if="isMenuOpen"/>
-			<font-awesome-icon icon="fa-bars" class="menu" v-else/>
-		</button>
-		<ul class="header-titles" v-else>
-			<li class="header-title" v-for="item in titles" :key="item.title">
-				<a :href="'#' + item.key" class="nav-link">{{ item.title }}</a>
-			</li>
-		</ul>
+		<div class="wrapper">
+			<button @click="toggleMenu" aria-label="menu" class="button-menu" v-if="isMobile">
+				<font-awesome-icon icon="fa-x" class="menu" v-if="isMenuOpen"/>
+				<font-awesome-icon icon="fa-bars" class="menu" v-else/>
+			</button>
+			<ul class="header-titles" v-else>
+				<li class="header-title" v-for="item in titles" :key="item.title">
+					<a :href="'#' + item.key" class="nav-link">{{ item.title }}</a>
+				</li>
+			</ul>
+			<SwitchLanguageButton/>
+		</div>
 	</section>
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue';
 import MobileMenu from '@/components/MobileMenu.vue';
-import { translate } from '../../translation/translate.ts';
+import { translate } from '@/translation/translate';
+import SwitchLanguageButton from '@/components/SwitchLanguageButton.vue';
 
 const titles: { key: string; title: string; }[] = [
 	{ key: 'solution', title: translate('header.title.solution') as string },
@@ -76,6 +80,12 @@ const toggleMenu = () => {
 			font-size: 20px;
 			font-weight: 500;
 		}
+	}
+
+	.wrapper {
+		display: flex;
+		align-items: center;
+		gap: $large-gap;
 	}
 
 	@media screen and (max-width: 768px) {

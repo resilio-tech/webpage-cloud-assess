@@ -1,6 +1,7 @@
 import { h, VNode } from "vue";
 import { en } from './languages/en';
 import { fr } from './languages/fr';
+import { getLanguage } from '@/utils/getLanguage';
 
 export type Language = { [key: string]: string };
 export type TranslateChange = { [key: string]: string | ((sequence: string) => string | VNode) }
@@ -8,7 +9,7 @@ export type TranslateChange = { [key: string]: string | ((sequence: string) => s
 const devMode = process.env.NODE_ENV === 'development';
 
 export function translate(index: string, change?: TranslateChange | string, lang?: string): string | VNode {
-	const currentLang = 'en';
+	const currentLang = getLanguage();
 
 	lang = typeof change === 'string' ? change : lang || currentLang;
 	const translateChange = (typeof change === 'string' ? {} : change) || {};
