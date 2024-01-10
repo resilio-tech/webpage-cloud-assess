@@ -16,6 +16,7 @@
 import { computed, VNode } from 'vue';
 import { VNodeRenderer } from '@/components/VNodeRenderer';
 import { TranslatedString, TranslatedStringList } from '@/types/TranslatedStringList';
+import { isVNode } from '@/utils/isVNode';
 
 const isMobile = window.innerWidth < 768;
 
@@ -27,8 +28,6 @@ const props = defineProps<{
 	width?: string;
 	padding?: string;
 }>()
-
-const isVNode = (item: any): item is VNode => item && item.__v_isVNode;
 
 const updateCardStyle = computed(() => ({
 	backgroundColor: props.backgroundColor || 'white',

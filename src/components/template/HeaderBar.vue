@@ -1,7 +1,7 @@
 <template>
 	<MobileMenu v-if="isMobile && isMenuOpen" :titles="titles" :toggleMenu="toggleMenu"/>
 	<section class="header">
-		<img src="@/assets/media/logo-ca.svg" alt="logo" class="logo"/>
+		<img src="../../assets/media/logo-ca.svg" alt="logo" class="logo"/>
 		<button @click="toggleMenu" aria-label="menu" class="button-menu" v-if="isMobile">
 			<font-awesome-icon icon="fa-x" class="menu" v-if="isMenuOpen"/>
 			<font-awesome-icon icon="fa-bars" class="menu" v-else/>
@@ -17,7 +17,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import MobileMenu from '@/components/MobileMenu.vue';
-import { translate } from '../translation/translate';
+import { translate } from '../../translation/translate.ts';
 
 const titles: { key: string; title: string; }[] = [
 	{ key: 'solution', title: translate('header.title.solution') as string },

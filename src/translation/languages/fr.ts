@@ -1,6 +1,9 @@
 import { Language } from '../translate';
 
 export const fr: Language = {
+	'address': 'Adresse',
+	'contactUs': 'Contactez-nous',
+	'credits': 'Crédits',
 	'getAhead': 'Prenez de l\'avance !',
 	'getCertified': 'Faites-vous certifier !',
 
@@ -42,6 +45,10 @@ export const fr: Language = {
 	'customerCase.exoscale.point2': 'Le flux de données d’usage pour la facturation est copié vers &cloudAssessBlackOrange().',
 	'customerCase.exoscale.point3': 'Les rapports d’empreinte sont retournés dans le data lake.',
 	'customerCase.exoscale.toCome': 'Janvier 2024 : &break() &break() Les clients et clientes verront leur empreinte sur leur facture !',
+
+	'footer.cloudAssess.addresses': '&linkResilio(Resilio) SA - EPFL Innovation Park, Bâtiment C, 1015 Lausanne, Suisse &break() &linkKleis(Kleis Technology) Sarl, Rue Mauborget 1, 1003 Lausanne, Suisse',
+	'footer.cloudAssess.credits': 'UX Design: Marie Husson &break() Développement: &linkBima(Tanguy Pauvret), Resilio SA &break() Icones: Font Awesome, Freepik'
+	,
 
 	'header.title.solution': 'Notre Solution',
 	'header.title.csrd': 'Conformité CSRD',

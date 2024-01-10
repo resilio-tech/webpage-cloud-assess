@@ -2,12 +2,15 @@
 	<section class="footer">
 		<div class="footer-content">
 			<p class="subtitle" v-for="(subtitle, index) in subtitles" :key="subtitle">
-				{{ subtitle }} :
+				<b>{{ subtitle }} :</b>
 				<br/>
-				<span class="subtitle-content" v-html="content[index]"/>
+				<template v-if="isVNode(content[index])">
+					<VNodeRenderer :node="content[index]" />
+				</template>
+				<span v-else v-html="content[index]"></span>
 			</p>
 			<div class="footer-logo">
-				<img src="@/assets/media/flag-switzerland.svg" alt="flag" class="flag"/>
+				<img src="../../assets/media/flag-switzerland.svg" alt="flag" class="flag"/>
 				<p>Made in Switzerland</p>
 			</div>
 		</div>
@@ -15,16 +18,22 @@
 </template>
 
 <script setup lang="ts">
-const subtitles: string[] = [
-	'Adresse',
-	'Contactez-nous',
-	'Crédits'
+import { TranslatedStringList } from '@/types/TranslatedStringList';
+import { translate } from '@/translation/translate';
+import { changes } from '@/translation/changes';
+import { VNodeRenderer } from '@/components/VNodeRenderer';
+import { isVNode } from '@/utils/isVNode.ts';
+
+const subtitles: TranslatedStringList = [
+	translate('address') as string,
+	translate('contactUs') as string,
+	translate('credits') as string,
 ]
 
-const content: string[] = [
-	'<a href="https://resilio-solutions.com">Resilio</a> SA - EPFL Innovation Park, Bâtiment C, 1015 Lausanne, Suisse <br/> <a href="https://kleis.ch">Kleis</a> Technology Sarl, Rue Mauborget 1, 1003 Lausanne, Suisse',
+const content: TranslatedStringList = [
+	translate('footer.cloudAssess.addresses', changes),
 	'Email : contact@resilio.tech',
-	'UX Design: Marie Husson <br/> Développement: <a style="" href="https://github.com/Bima42">Tanguy Pauvret</a>, Resilio SA <br/> Icones: Font Awesome, Freepik'
+	translate('footer.cloudAssess.credits', changes),
 ]
 </script>
 
@@ -49,7 +58,6 @@ const content: string[] = [
 		width: 100%;
 
 		.subtitle {
-			font-weight: bold;
 			padding-top: $medium-padding;
 			max-width: 20%;
 

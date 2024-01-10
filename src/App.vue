@@ -9,8 +9,8 @@
 </template>
 
 <script setup lang="ts">
-import HeaderBar from '@/components/HeaderBar.vue';
-import FooterBar from '@/components/FooterBar.vue';
+import HeaderBar from '@/components/template/HeaderBar.vue';
+import FooterBar from '@/components/template/FooterBar.vue';
 </script>
 
 <style lang="scss">

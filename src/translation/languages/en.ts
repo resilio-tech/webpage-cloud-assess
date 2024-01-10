@@ -1,6 +1,9 @@
 import { Language } from '../translate';
 
 export const en: Language = {
+	'address': 'Address',
+	'contactUs': 'Contact Us',
+	'credits': 'Credits',
 	'getAhead': 'Get ahead of the game !',
 	'getCertified': 'Get certified !',
 
@@ -40,6 +43,9 @@ export const en: Language = {
 	'customerCase.exoscale.point2': 'Usage data flow for billing is copied to &cloudAssessBlackOrange().',
 	'customerCase.exoscale.point3': 'Footprint reports are returned to the data lake.',
 	'customerCase.exoscale.toCome': 'January 2024: &break() &break() Customers will see their footprint on their bill !',
+
+	'footer.cloudAssess.addresses': '&linkResilio(Resilio) SA - EPFL Innovation Park, Building C, 1015 Lausanne, Switzerland &break() &linkKleis(Kleis Technology) Sarl, Rue Mauborget 1, 1003 Lausanne, Switzerland',
+	'footer.cloudAssess.credits': 'UX Design: Marie Husson &break() Development: &linkBima(Tanguy Pauvret), Resilio SA &break() Icons: Font Awesome, Freepik',
 
 	'header.title.solution': 'Our Solution',
 	'header.title.csrd': 'CSRD Compliance',
