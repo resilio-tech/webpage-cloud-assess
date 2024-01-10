@@ -26,6 +26,9 @@ export const fr: Language = {
 	'cloudAssess.what.footprintServices.step3.point3': 'Outil &bold(automatisé)',
 	'cloudAssess.what.footprintServices.step3.point4': 'Bibliothèques de &bold(modèles conformes)',
 	'cloudAssess.corps': '&cloudAssessBlackOrange() est issu d’une joint venture de  &linkResilio(Resilio), spécialiste de l’empreinte environnementale de l’IT, et de &linkKleis(Kleis Technology), pionnier du LCA-as-Code.',
+	'cloudAssess.githubRepository': '&linkGithubRepository(Github repository)',
+	'cloudAssess.info.company': '2 entreprises',
+	'cloudAssess.info.team': 'Une équipe pluridisciplinaire dédiée',
 
 	'csrd.resume': 'A partir de &bold(2025), les &bold(grandes entreprises européennes) devront évaluer l\'&bold(empreinte des services cloud) qu\'ils utilisent. Pour permettre à leurs clients et clientes de respecter cette norme, les fournisseurs de services cloud vont devoir afficher les impacts environnementaux associés aux services proposés.',
 	'csrd.cloudAssess': '&cloudAssessBlackOrange() a pour but d’afficher les impacts environnementaux des services cloud sur la base d\'bold(une méthodologie commune, cohérente et transparente).',

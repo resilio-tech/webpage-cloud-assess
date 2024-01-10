@@ -1,12 +1,15 @@
 <template>
 	<div class="stats container">
-		<p>2 entreprises</p>
-		<p>Une équipe pluridisciplinaire dédiée</p>
-		<a href="https://github.com/kleis-technology/cloud-assess">Github Repository</a>
+		<p>{{ translate('cloudAssess.info.company') }}</p>
+		<p>{{ translate('cloudAssess.info.team') }}</p>
+		<VNodeRenderer :node="translate('cloudAssess.githubRepository', changes)" />
 	</div>
 </template>
 
 <script setup lang="ts">
+import { VNodeRenderer } from '@/components/VNodeRenderer';
+import { translate } from '@/translation/translate';
+import { changes } from '@/translation/changes';
 
 </script>
 

@@ -8,5 +8,6 @@ export const changes = {
 	cloudAssessBlackOrange: () => h(CloudAssess, { format: "blackOrange" }),
 	cloudAssessBlackWhite: () => h(CloudAssess, { format: "blackWhite" }),
 	linkResilio: (text: string) => h('a', { href: 'https://resilio-solutions.com' }, text),
-	linkKleis: (text: string) => h('a', { href: 'https://kleis.ch' }, text)
+	linkKleis: (text: string) => h('a', { href: 'https://kleis.ch' }, text),
+	linkGithubRepository: (text: string) => h('a', { href: 'https://github.com/kleis-technology/cloud-assess' }, text),
 };
