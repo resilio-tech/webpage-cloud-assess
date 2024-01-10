@@ -1,12 +1,12 @@
 <template>
 	<div class="background-container container">
 		<div class="content">
-			<p class="subtitle">IaaS, PaaS, SaaS</p>
-			<h1 class="title" id="solution">Vous méritez mieux que du greenwashing !</h1>
-			<p><b>Cloud<span class="orange-text">Assess</span></b>, un <b style="color: #F77B0B">outil open source</b> pour évaluer automatiquement <b>votre empreinte environnementale</b> en tant que fournisseur de services cloud.</p>
+			<p class="subtitle">{{ subtitle }}</p>
+			<h1 class="title" id="solution">{{ title }}</h1>
+			<p><VNodeRenderer :node="description" /></p>
 			<div class="actions">
-				<button @click="redirectRepository" aria-label="Code source">Code source</button>
-				<button @click="redirectResilio" aria-label="Réserver votre démo">Réserver votre démo !</button>
+				<button @click="redirectRepository" aria-label="Code source">{{ sourceCode }}</button>
+				<button @click="redirectResilio" aria-label="Réserver votre démo">{{ bookDemo }}</button>
 			</div>
 		</div>
 		<div class="image">
@@ -16,12 +16,22 @@
 </template>
 
 <script setup lang="ts">
+import { translate } from '../../translation/translate';
+import { changes } from '../../translation/changes';
+import { VNodeRenderer } from '../../components/VNodeRenderer';
+
 const redirectResilio = () => {
 	window.location.href = 'https://resilio-solutions.com/fr/contact/';
 }
 const redirectRepository = () => {
 	window.location.href = 'https://github.com/kleis-technology/cloud-assess';
 }
+
+const subtitle = translate('landing.title.iaas');
+const title = translate('landing.title.greenwashing');
+const description = translate('landing.description', changes);
+const sourceCode = translate('button.sourceCode');
+const bookDemo = translate('button.bookDemo');
 </script>
 
 <style scoped lang="scss">
