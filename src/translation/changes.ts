@@ -10,5 +10,13 @@ export const changes = {
 	linkBima: (text: string) => h('a', { href: 'https://github.com/Bima42' }, text),
 	linkKleis: (text: string) => h('a', { href: 'https://kleis.ch' }, text),
 	linkResilio: (text: string) => h('a', { href: 'https://resilio-solutions.com' }, text),
-	linkGithubRepository: (text: string) => h('a', { href: 'https://github.com/kleis-technology/cloud-assess' }, text),
+	linkGithubRepository: (text: string) => h('a', {
+		href: 'https://github.com/kleis-technology/cloud-assess',
+		style: {
+			fontSize: "18px",
+			textAlign: "center",
+			color: "white",
+			fontWeight: "bold",
+		},
+	}, text),
 };

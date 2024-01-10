@@ -11,7 +11,6 @@ import TranslateRenderer from '@/components/translate/TranslateRenderer.vue';
 </script>
 
 <style scoped lang="scss">
-
 .stats {
 	display: flex;
 	width: 100%;
@@ -20,16 +19,11 @@ import TranslateRenderer from '@/components/translate/TranslateRenderer.vue';
 	padding: $xlarge-padding;
 	gap: 100px;
 
-	p, a {
+	p {
 		font-size: 18px;
 		text-align: center;
 		color: white;
 		font-weight: bold;
-	}
-
-	a {
-		text-decoration: underline;
-		cursor: pointer;
 	}
 }
 
