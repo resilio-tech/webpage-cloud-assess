@@ -31,6 +31,12 @@ export const en: Language = {
 	'csrd.resume': 'From &bold(2025), &bold(large European companies) will have to assess the &bold(footprint of the cloud services) they use. To enable their customers to comply with this standard, cloud service providers will have to display the environmental impacts associated with the services they offer.\n',
 	'csrd.cloudAssess': '&cloudAssessBlackOrange() aims to display the environmental impacts of cloud services based on a &bold(a common, consistent and transparent methodology).',
 
+	'customerCase.exoscale.resume': 'Cloud provider based in Switzerland, 70 people - 7 zones',
+	'customerCase.exoscale.point1': 'An &cloudAssessBlackOrange() instance is deployed on the Exoscale infrastructure.',
+	'customerCase.exoscale.point2': 'Usage data flow for billing is copied to &cloudAssessBlackOrange().',
+	'customerCase.exoscale.point3': 'Footprint reports are returned to the data lake.',
+	'customerCase.exoscale.toCome': 'January 2024: &break() &break() Customers will see their footprint on their bill !',
+
 	'header.title.solution': 'Our Solution',
 	'header.title.csrd': 'CSRD Compliance',
 	'header.title.whoAreWe': 'Who Are We ?',

@@ -4,13 +4,10 @@
 			<h1 id="customer-case">Cas client</h1>
 			<div class="customer">
 				<img src="@/assets/media/exoscale-logo.svg" alt="customer" class="customer-img"/>
-				<p>Fournisseur Cloud basé en Suisse, 70 personnes - 7 zones</p>
+				<p>{{ translate('customerCase.exoscale.resume')}}</p>
 				<div class="customer-infos">
-					<CardList :list="cardData" :width="!isMobile ? '50%' : ''" :padding="!isMobile ? '' : '15px'"/>
-					<p>
-						Janvier 2024 : <br/><br/>
-						Les clients et clientes verront leur empreinte sur leur facture !
-					</p>
+					<CardList :list="list" :width="!isMobile ? '50%' : ''" :padding="!isMobile ? '' : '15px'"/>
+					<p><VNodeRenderer :node="translate('customerCase.exoscale.toCome', changes)"/></p>
 				</div>
 			</div>
 		</div>
@@ -19,12 +16,16 @@
 
 <script setup lang="ts">
 import CardList from '@/components/CardList.vue';
+import { translate } from '@/translation/translate';
+import { TranslatedStringList } from '@/types/TranslatedStringList';
+import { changes } from '@/translation/changes';
+import { VNodeRenderer } from '@/components/VNodeRenderer';
 
 const isMobile = window.innerWidth < 768;
-const cardData = [
-	'Une instance <b>Cloud<span class="orange-text">Assess</span></b> est déployée sur l’infrastrucure Exoscale.',
-	'Le flux de données d’usage pour la facturation est copié vers <b>Cloud<span class="orange-text">Assess</span></b>.',
-	'Les rapports d’empreinte sont retournés dans le data lake.'
+const list: TranslatedStringList = [
+	translate('customerCase.exoscale.point1', changes),
+	translate('customerCase.exoscale.point2', changes),
+	translate('customerCase.exoscale.point3', changes)
 ]
 </script>
 
