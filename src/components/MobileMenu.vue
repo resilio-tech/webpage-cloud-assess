@@ -5,10 +5,13 @@
 				<a @click="toggleMenu" :href="'#' + item.key" class="nav-link">{{ item.title }}</a>
 			</li>
 		</ul>
+		<SwitchLanguageButton/>
 	</section>
 </template>
 
 <script setup lang="ts">
+import SwitchLanguageButton from '@/components/SwitchLanguageButton.vue';
+
 const props = defineProps<{
 	titles: { key: string; title: string; }[];
 	toggleMenu: () => void;

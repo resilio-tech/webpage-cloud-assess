@@ -12,7 +12,7 @@
 					<a :href="'#' + item.key" class="nav-link">{{ item.title }}</a>
 				</li>
 			</ul>
-			<SwitchLanguageButton/>
+			<SwitchLanguageButton v-if="!isMobile"/>
 		</div>
 	</section>
 </template>
