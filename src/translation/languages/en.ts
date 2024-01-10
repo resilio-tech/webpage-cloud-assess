@@ -1,7 +1,10 @@
 import { Language } from '../translate';
 
 export const en: Language = {
+	'getAhead': 'Get ahead of the game !',
+
 	'button.bookDemo': 'Book a demo !',
+	'button.contactUs': 'Contact Us',
 	'button.sourceCode': 'Source Code',
 
 	'cloudAssess.whatIsIt': 'What is &cloudAssessBlackWhite() ?',
@@ -20,6 +23,9 @@ export const en: Language = {
 	'cloudAssess.what.footprintServices.step3.point2': '&bold(Open and transparent) methodology',
 	'cloudAssess.what.footprintServices.step3.point3': '&bold(Automated) tool',
 	'cloudAssess.what.footprintServices.step3.point4': '&bold(Compliant models) libraries',
+
+	'csrd.resume': 'From &bold(2025), &bold(large European companies) will have to assess the &bold(footprint of the cloud services) they use. To enable their customers to comply with this standard, cloud service providers will have to display the environmental impacts associated with the services they offer.\n',
+	'csrd.cloudAssess': '&cloudAssessBlackOrange() aims to display the environmental impacts of cloud services based on a &bold(a common, consistent and transparent methodology).',
 
 	'header.title.solution': 'Our Solution',
 	'header.title.csrd': 'CSRD Compliance',
