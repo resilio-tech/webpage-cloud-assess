@@ -1,28 +1,23 @@
 <template>
 	<div class="card" :style="updateCardStyle">
-		<h4 v-if="props.title">{{ props.title }}</h4>
+		<h4 v-if="props.title"><TranslateRenderer :translate-key="props.title"/></h4>
 		<ul>
 			<li v-for="(item, index) in props.list" :key="index" :style="updateListItemStyle">
-				<template v-if="isVNode(item)">
-					<VNodeRenderer :node="item" />
-				</template>
-				<span v-else v-html="item"></span>
+				<TranslateRenderer :translate-key="item"/>
 			</li>
 		</ul>
 	</div>
 </template>
 
 <script setup lang="ts">
-import { computed, VNode } from 'vue';
-import { VNodeRenderer } from '@/components/VNodeRenderer';
-import { TranslatedString, TranslatedStringList } from '@/types/TranslatedStringList';
-import { isVNode } from '@/utils/isVNode';
+import { computed } from 'vue';
+import TranslateRenderer from '@/components/translate/TranslateRenderer.vue';
 
 const isMobile = window.innerWidth < 768;
 
 const props = defineProps<{
-	title?: TranslatedString;
-	list: TranslatedStringList;
+	title?: string;
+	list: string[];
 	backgroundColor?: string;
 	color?: string;
 	width?: string;

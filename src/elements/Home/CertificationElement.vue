@@ -5,16 +5,14 @@
 				<img src="@/assets/media/customer-case-icon.svg" alt="customer-icon" class="customer-icon"/>
 			</div>
 			<h2 id="certification" class="orange-text">{{ translate('getCertified') }}</h2>
-			<p><VNodeRenderer :node="translate('certification.resume', changes)"/></p>
+			<p><TranslateRenderer :translate-key="'certification.resume'"/></p>
 		</div>
 	</div>
 </template>
 
 <script setup lang="ts">
-
-import { translate } from '@/translation/translate.ts';
-import { VNodeRenderer } from '@/components/VNodeRenderer';
-import { changes } from '@/translation/changes';
+import { translate } from '@/translation/translate';
+import TranslateRenderer from '@/components/translate/TranslateRenderer.vue';
 </script>
 
 <style scoped lang="scss">

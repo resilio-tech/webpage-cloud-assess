@@ -11,16 +11,13 @@
 			</a>
 		</div>
 		<div class="content">
-			<p><VNodeRenderer :node="translate('cloudAssess.corps', changes)"/></p>
+			<p><TranslateRenderer :translate-key="'cloudAssess.corps'"/></p>
 		</div>
 	</div>
 </template>
 
 <script setup lang="ts">
-
-import { VNodeRenderer } from '@/components/VNodeRenderer';
-import { translate } from '@/translation/translate';
-import { changes } from '@/translation/changes';
+import TranslateRenderer from '@/components/translate/TranslateRenderer.vue';
 </script>
 
 <style scoped lang="scss">

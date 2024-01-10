@@ -5,8 +5,8 @@
 				<br/>
 				{{ translate('getAhead') }}
 			</h1>
-			<p><VNodeRenderer :node="translate('csrd.resume', changes)"/></p>
-			<p><VNodeRenderer :node="translate('csrd.cloudAssess', changes)"/></p>
+			<p><TranslateRenderer :translate-key="'csrd.resume'"/></p>
+			<p><TranslateRenderer :translate-key="'csrd.cloudAssess'"/></p>
 
 			<button @click="redirectResilio" class="contact-us" aria-label="Contactez nous">{{ translate('button.contactUs') }}</button>
 		</div>
@@ -15,8 +15,7 @@
 
 <script setup lang="ts">
 import { translate } from '@/translation/translate';
-import { changes } from '@/translation/changes';
-import { VNodeRenderer } from '@/components/VNodeRenderer.ts';
+import TranslateRenderer from '@/components/translate/TranslateRenderer.vue';
 
 const redirectResilio = () => {
 	window.location.href = 'https://resilio-solutions.com/fr/contact/';

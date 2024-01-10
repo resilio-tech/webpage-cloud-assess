@@ -7,7 +7,7 @@
 				<p>{{ translate('customerCase.exoscale.resume')}}</p>
 				<div class="customer-infos">
 					<CardList :list="list" :width="!isMobile ? '50%' : ''" :padding="!isMobile ? '' : '15px'"/>
-					<p><VNodeRenderer :node="translate('customerCase.exoscale.toCome', changes)"/></p>
+					<p><TranslateRenderer :translate-key="'customerCase.exoscale.toCome'"/></p>
 				</div>
 			</div>
 		</div>
@@ -17,15 +17,13 @@
 <script setup lang="ts">
 import CardList from '@/components/CardList.vue';
 import { translate } from '@/translation/translate';
-import { TranslatedStringList } from '@/types/TranslatedStringList';
-import { changes } from '@/translation/changes';
-import { VNodeRenderer } from '@/components/VNodeRenderer';
+import TranslateRenderer from '@/components/translate/TranslateRenderer.vue';
 
 const isMobile = window.innerWidth < 768;
-const list: TranslatedStringList = [
-	translate('customerCase.exoscale.point1', changes),
-	translate('customerCase.exoscale.point2', changes),
-	translate('customerCase.exoscale.point3', changes)
+const list: string[] = [
+	'customerCase.exoscale.point1',
+	'customerCase.exoscale.point2',
+	'customerCase.exoscale.point3'
 ]
 </script>
 

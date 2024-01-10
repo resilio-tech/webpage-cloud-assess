@@ -1,12 +1,12 @@
 <template>
 	<div class="background-container container">
 		<div class="content">
-			<p class="subtitle">{{ subtitle }}</p>
-			<h1 class="title" id="solution">{{ title }}</h1>
-			<p><VNodeRenderer :node="description" /></p>
+			<p class="subtitle"><TranslateRenderer :translate-key="'landing.title.iaas'"/></p>
+			<h1 class="title" id="solution"><TranslateRenderer :translate-key="'landing.title.greenwashing'"/></h1>
+			<p><TranslateRenderer :translate-key="'landing.description'" /></p>
 			<div class="actions">
-				<button @click="redirectRepository" aria-label="Code source">{{ sourceCode }}</button>
-				<button @click="redirectResilio" aria-label="Réserver votre démo">{{ bookDemo }}</button>
+				<button @click="redirectRepository" aria-label="Code source"><TranslateRenderer :translate-key="'button.sourceCode'" /></button>
+				<button @click="redirectResilio" aria-label="Réserver votre démo"><TranslateRenderer :translate-key="'button.bookDemo'" /></button>
 			</div>
 		</div>
 		<div class="image">
@@ -16,9 +16,7 @@
 </template>
 
 <script setup lang="ts">
-import { translate } from '@/translation/translate';
-import { changes } from '@/translation/changes';
-import { VNodeRenderer } from '@/components/VNodeRenderer';
+import TranslateRenderer from '@/components/translate/TranslateRenderer.vue';
 
 const redirectResilio = () => {
 	window.location.href = 'https://resilio-solutions.com/fr/contact/';
@@ -26,12 +24,6 @@ const redirectResilio = () => {
 const redirectRepository = () => {
 	window.location.href = 'https://github.com/kleis-technology/cloud-assess';
 }
-
-const subtitle = translate('landing.title.iaas');
-const title = translate('landing.title.greenwashing');
-const description = translate('landing.description', changes);
-const sourceCode = translate('button.sourceCode');
-const bookDemo = translate('button.bookDemo');
 </script>
 
 <style scoped lang="scss">

@@ -1,7 +1,7 @@
 <template>
 	<div class="cloud-assess container">
 		<div class="content">
-			<h1><VNodeRenderer :node="title"/></h1>
+			<h1><TranslateRenderer :translate-key="'cloudAssess.whatIsIt'"/></h1>
 			<div class="card-container">
 				<CardList
 					v-for="(list, index) in lists"
@@ -16,36 +16,31 @@
 
 <script setup lang="ts">
 import CardList from '@/components/CardList.vue';
-import { translate } from '@/translation/translate';
-import { changes } from '@/translation/changes';
-import { VNodeRenderer } from '@/components/VNodeRenderer';
-import { TranslatedStringList } from '@/types/TranslatedStringList';
+import TranslateRenderer from '@/components/translate/TranslateRenderer.vue';
 
-const title = translate('cloudAssess.whatIsIt', changes);
-
-const cardListTitles: TranslatedStringList = [
-	translate('cloudAssess.what.footprintServices.step1.title') as string,
-	translate('cloudAssess.what.footprintServices.step2.title') as string,
-	translate('cloudAssess.what.footprintServices.step3.title') as string,
+const cardListTitles: string[] = [
+	'cloudAssess.what.footprintServices.step1.title',
+	'cloudAssess.what.footprintServices.step2.title',
+	'cloudAssess.what.footprintServices.step3.title',
 ]
-const firstList: TranslatedStringList = [
-	translate('cloudAssess.what.footprintServices.step1.point1') as string,
-	translate('cloudAssess.what.footprintServices.step1.point2', changes),
-	translate('cloudAssess.what.footprintServices.step1.point3', changes),
+const firstList: string[] = [
+	'cloudAssess.what.footprintServices.step1.point1',
+	'cloudAssess.what.footprintServices.step1.point2',
+	'cloudAssess.what.footprintServices.step1.point3',
 ]
 
-const secondList: TranslatedStringList = [
-	translate('cloudAssess.what.footprintServices.step2.point1', changes),
-	translate('cloudAssess.what.footprintServices.step2.point2', changes),
-	translate('cloudAssess.what.footprintServices.step2.point3', changes),
-	translate('cloudAssess.what.footprintServices.step2.point4', changes),
+const secondList: string[] = [
+	'cloudAssess.what.footprintServices.step2.point1',
+	'cloudAssess.what.footprintServices.step2.point2',
+	'cloudAssess.what.footprintServices.step2.point3',
+	'cloudAssess.what.footprintServices.step2.point4',
 ]
 
-const thirdList: TranslatedStringList = [
-	translate('cloudAssess.what.footprintServices.step3.point1', changes),
-	translate('cloudAssess.what.footprintServices.step3.point2', changes),
-	translate('cloudAssess.what.footprintServices.step3.point3', changes),
-	translate('cloudAssess.what.footprintServices.step3.point4', changes),
+const thirdList: string[] = [
+	'cloudAssess.what.footprintServices.step3.point1',
+	'cloudAssess.what.footprintServices.step3.point2',
+	'cloudAssess.what.footprintServices.step3.point3',
+	'cloudAssess.what.footprintServices.step3.point4',
 ]
 
 const lists = [firstList, secondList, thirdList];

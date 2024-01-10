@@ -1,13 +1,10 @@
 <template>
 	<section class="footer">
 		<div class="footer-content">
-			<p class="subtitle" v-for="(subtitle, index) in subtitles" :key="subtitle">
+			<p class="subtitle" v-for="(subtitle, index) in subtitles" :key="index">
 				<b>{{ subtitle }} :</b>
 				<br/>
-				<template v-if="isVNode(content[index])">
-					<VNodeRenderer :node="content[index]" />
-				</template>
-				<span v-else v-html="content[index]"></span>
+				<TranslateRenderer :translateKey="content[index]"/>
 			</p>
 			<div class="footer-logo">
 				<img src="../../assets/media/flag-switzerland.svg" alt="flag" class="flag"/>
@@ -20,9 +17,7 @@
 <script setup lang="ts">
 import { TranslatedStringList } from '@/types/TranslatedStringList';
 import { translate } from '@/translation/translate';
-import { changes } from '@/translation/changes';
-import { VNodeRenderer } from '@/components/VNodeRenderer';
-import { isVNode } from '@/utils/isVNode.ts';
+import TranslateRenderer from '@/components/translate/TranslateRenderer.vue';
 
 const subtitles: TranslatedStringList = [
 	translate('address') as string,
@@ -30,10 +25,10 @@ const subtitles: TranslatedStringList = [
 	translate('credits') as string,
 ]
 
-const content: TranslatedStringList = [
-	translate('footer.cloudAssess.addresses', changes),
-	'Email : contact@resilio.tech',
-	translate('footer.cloudAssess.credits', changes),
+const content: string[] = [
+	'footer.cloudAssess.addresses',
+	'footer.email',
+	'footer.cloudAssess.credits',
 ]
 </script>
 

@@ -1,16 +1,13 @@
 <template>
 	<div class="stats container">
-		<p>{{ translate('cloudAssess.info.company') }}</p>
-		<p>{{ translate('cloudAssess.info.team') }}</p>
-		<VNodeRenderer :node="translate('cloudAssess.githubRepository', changes)" />
+		<p><TranslateRenderer :translate-key="'cloudAssess.info.company'"/></p>
+		<p><TranslateRenderer :translate-key="'cloudAssess.info.team'"/></p>
+		<TranslateRenderer :translate-key="'cloudAssess.githubRepository'"/>
 	</div>
 </template>
 
 <script setup lang="ts">
-import { VNodeRenderer } from '@/components/VNodeRenderer';
-import { translate } from '@/translation/translate';
-import { changes } from '@/translation/changes';
-
+import TranslateRenderer from '@/components/translate/TranslateRenderer.vue';
 </script>
 
 <style scoped lang="scss">
