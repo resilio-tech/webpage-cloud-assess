@@ -1,7 +1,7 @@
 <template>
 	<div class="customer-case container">
 		<div class="content">
-			<h1 id="customer-case">Cas client</h1>
+			<h1 id="customer-case"><TranslateRenderer translate-key="customerCase.title"/></h1>
 			<div class="customer">
 				<img src="@/assets/media/exoscale-logo.svg" alt="customer" class="customer-img"/>
 				<p>{{ translate('customerCase.exoscale.resume')}}</p>

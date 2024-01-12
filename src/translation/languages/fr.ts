@@ -40,6 +40,7 @@ export const fr: Language = {
 	'csrd.resume': 'A partir de &bold(2025), les &bold(grandes entreprises européennes) devront évaluer l\'&bold(empreinte des services cloud) qu\'ils utilisent. Pour permettre à leurs clients et clientes de respecter cette norme, les fournisseurs de services cloud vont devoir afficher les impacts environnementaux associés aux services proposés.',
 	'csrd.cloudAssess': '&cloudAssessBlackOrange() a pour but d’afficher les impacts environnementaux des services cloud sur la base d\'bold(une méthodologie commune, cohérente et transparente).',
 
+	'customerCase.title': 'Cas client',
 	'customerCase.exoscale.resume': 'Fournisseur Cloud basé en Suisse, 70 personnes - 7 zones',
 	'customerCase.exoscale.point1': 'Une instance &cloudAssessBlackOrange() est déployée sur l’infrastrucure Exoscale.',
 	'customerCase.exoscale.point2': 'Le flux de données d’usage pour la facturation est copié vers &cloudAssessBlackOrange().',
