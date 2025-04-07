@@ -11,13 +11,13 @@
 </template>
 
 <script setup lang="ts">
-import LandingElement from '@/elements/Home/LandingElement.vue';
-import CloudAssessElement from '@/elements/Home/CloudAssessElement.vue';
-import CSRDElement from '@/elements/Home/CSRDElement.vue';
-import CorpsElement from '@/elements/Home/CorpsElement.vue';
-import CustomerCaseElement from '@/elements/Home/CustomerCaseElement.vue';
-import CertificationElement from '@/elements/Home/CertificationElement.vue';
-import StatsElement from '@/elements/Home/StatsElement.vue';
+import LandingElement from '@/sections/Home/LandingElement.vue';
+import CloudAssessElement from '@/sections/Home/CloudAssessElement.vue';
+import CSRDElement from '@/sections/Home/CSRDElement.vue';
+import CorpsElement from '@/sections/Home/CorpsElement.vue';
+import CustomerCaseElement from '@/sections/Home/CustomerCaseElement.vue';
+import CertificationElement from '@/sections/Home/CertificationElement.vue';
+import StatsElement from '@/sections/Home/StatsElement.vue';
 </script>
 
 <style scoped lang="scss">
