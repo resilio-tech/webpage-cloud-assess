@@ -1,12 +1,13 @@
 <template>
 	<section class="home-view">
-		<LandingElement/>
-		<CloudAssessElement/>
-		<CSRDElement/>
-		<CorpsElement/>
-		<StatsElement/>
-		<CustomerCaseElement/>
-		<CertificationElement/>
+		<LandingElement />
+		<CloudAssessElement />
+		<CSRDElement />
+		<CorpsElement />
+		<StatsElement />
+		<OurOffer />
+		<CustomerCaseElement />
+		<CertificationElement />
 	</section>
 </template>
 
@@ -18,6 +19,7 @@ import CorpsElement from '@/sections/Home/CorpsElement.vue';
 import CustomerCaseElement from '@/sections/Home/CustomerCaseElement.vue';
 import CertificationElement from '@/sections/Home/CertificationElement.vue';
 import StatsElement from '@/sections/Home/StatsElement.vue';
+import OurOffer from '@/sections/Home/OurOffer.vue';
 </script>
 
 <style scoped lang="scss">
