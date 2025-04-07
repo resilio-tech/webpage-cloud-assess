@@ -40,6 +40,28 @@ export const fr: Language = {
 	'csrd.resume': 'A partir de &bold(2025), les &bold(grandes entreprises européennes) devront évaluer l\'&bold(empreinte des services cloud) qu\'ils utilisent. Pour permettre à leurs clients et clientes de respecter cette norme, les fournisseurs de services cloud vont devoir afficher les impacts environnementaux associés aux services proposés.',
 	'csrd.cloudAssess': '&cloudAssessBlackOrange() a pour but d’afficher les impacts environnementaux des services cloud sur la base d\'&bold(une méthodologie commune, cohérente et transparente).',
 
+	'ouroffer.title': 'Notre offre',
+	'ouroffer.subtitle': 'Découvrez notre offre pour vous accompagner dans votre projet d\'affichage environnemental du début jusqu\'à la fin.',
+	'ouroffer.table.bootstrap.title': 'Bootstrap',
+	'ouroffer.table.bootstrap.items': 'Kick-off & setup',
+	'ouroffer.table.bootstrap.description': 'Configuration standard de CloudAssess &break() Réponse à vos questions',
+
+	'ouroffer.table.scoping.title': 'Scoping',
+	'ouroffer.table.scoping.items': 'Vison & Roadmap &break() Communication & Risques &break() Rôles & Responsabilités &break() Architecure & Data',
+	'ouroffer.table.scoping.description': 'Cadrer le projet d\'affichage de l\'empreinte &break() Pour intégrer et exécuter dans les meilleures conditions',
+
+	'ouroffer.table.execute.title': 'Exécution',
+	'ouroffer.table.execute.items': 'Pipeline automatisée &break() Modèles ACV custom',
+	'ouroffer.table.execute.description': 'Intégration à votre infrastructure spécifique &break() Développement de modèles spécifiques',
+
+	'ouroffer.table.guarantees.title': 'Guarantees',
+	'ouroffer.table.guarantees.items1': 'Support',
+	'ouroffer.table.guarantees.items2': 'Resilio Database',
+	'ouroffer.table.guarantees.items3': 'Certification',
+	'ouroffer.table.guarantees.description1': 'Réponse à vos questions (expertise ACV, fonctionnalités de l\'outil CloudAssess)',
+	'ouroffer.table.guarantees.description2': 'Données à introduire dans le modèle',
+	'ouroffer.table.guarantees.description3': 'Vérification de leur conformité aux normes et standards',
+
 	'customerCase.title': 'Cas client',
 	'customerCase.exoscale.resume': 'Fournisseur Cloud basé en Suisse, 70 personnes - 7 zones',
 	'customerCase.exoscale.point1': 'Une instance &cloudAssessBlackOrange() est déployée sur l’infrastrucure Exoscale.',
