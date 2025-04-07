@@ -38,6 +38,28 @@ export const en: Language = {
 	'csrd.resume': 'From &bold(2025), &bold(large European companies) will have to assess the &bold(footprint of the cloud services) they use. To enable their customers to comply with this standard, cloud service providers will have to display the environmental impacts associated with the services they offer.\n',
 	'csrd.cloudAssess': '&cloudAssessBlackOrange() aims to display the environmental impacts of cloud services based on a &bold(a common, consistent and transparent methodology).',
 
+	'ouroffer.title': 'Our Offer',
+	'ouroffer.subtitle': 'Discover our offer to help you realise your environmental footprint project. From start to finish.',
+	'ouroffer.table.bootstrap.title': 'Bootstrap',
+	'ouroffer.table.bootstrap.items': 'Kick-off & setup',
+	'ouroffer.table.bootstrap.description': 'Standard CloudAssess configuration &break() Answer to your questions',
+
+	'ouroffer.table.scoping.title': 'Scoping',
+	'ouroffer.table.scoping.items': 'Vison & Roadmap &break() Communication & Risks &break() Roles & Responsibilities &break() Architecure & Data',
+	'ouroffer.table.scoping.description': 'Scope the environmental footprint project &break() To integrate and execute in the best conditions',
+
+	'ouroffer.table.execute.title': 'Execution',
+	'ouroffer.table.execute.items': 'Automated Pipelines &break() Custom LCA models',
+	'ouroffer.table.execute.description': 'Integrate in your specific infrastructure &break() Developpement of specific models',
+
+	'ouroffer.table.guarantees.title': 'Guarantees',
+	'ouroffer.table.guarantees.items1': 'Support',
+	'ouroffer.table.guarantees.items2': 'Resilio Database',
+	'ouroffer.table.guarantees.items3': 'Certification',
+	'ouroffer.table.guarantees.description1': 'Answer to your questions (LCA expertise, features of CloudAssess)',
+	'ouroffer.table.guarantees.description2': 'Data to enter in the model',
+	'ouroffer.table.guarantees.description3': 'Verification they conform to norms and standards',
+
 	'customerCase.title': 'Case studies',
 	'customerCase.exoscale.resume': 'Cloud provider based in Switzerland, 70 people - 7 zones',
 	'customerCase.exoscale.point1': 'An &cloudAssessBlackOrange() instance is deployed on the Exoscale infrastructure.',

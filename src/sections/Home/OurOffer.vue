@@ -1,53 +1,78 @@
 <script setup lang="ts">
+import TranslateRenderer from '@/components/translate/TranslateRenderer.vue';
 </script>
 
 <template>
     <section class="container">
         <header>
-            <h1>Notre offre</h1>
-            <h2>Découvrez notre offre pour vous accompagner dans votre projet d'affichage environnemental du début
-                jusqu'à la fin.</h2>
+            <h1>
+                <TranslateRenderer :translate-key="'ouroffer.title'" />
+            </h1>
+            <h2>
+                <TranslateRenderer :translate-key="'ouroffer.subtitle'" />
+            </h2>
         </header>
         <table>
             <tbody>
                 <tr>
-                    <th class="category">Bootstrap</th>
-                    <td class="items">Kick-off & Setup</td>
-                    <td class="description">Configuration standard de CloudAssess<br />Réponse à vos questions</td>
-                </tr>
-                <tr>
-                    <th class="category">Scoping</th>
+                    <th class="category">
+                        <TranslateRenderer :translate-key="'ouroffer.table.bootstrap.title'" />
+                    </th>
                     <td class="items">
-                        Vision & Roadmap<br />
-                        Communication & Risques<br />
-                        Rôles & Responsabilités<br />
-                        Architecture & Data
+                        <TranslateRenderer :translate-key="'ouroffer.table.bootstrap.items'" />
                     </td>
-                    <td class="description">Cadrer le projet d'affichage de l'empreinte<br />
-                        Pour intégrer et exécuter dans les meilleures conditions</td>
+                    <td class="description">
+                        <TranslateRenderer :translate-key="'ouroffer.table.bootstrap.description'" />
+                    </td>
                 </tr>
                 <tr>
-                    <th class="category">Exécution</th>
+                    <th class="category">
+                        <TranslateRenderer :translate-key="'ouroffer.table.scoping.title'" />
+                    </th>
                     <td class="items">
-                        Pipeline automatisée<br />
-                        Modèles ACV custom
+                        <TranslateRenderer :translate-key="'ouroffer.table.scoping.items'" />
                     </td>
-                    <td class="description">Intégration à votre infrastructure spécifique<br />
-                        Développement de modèles spécifiques</td>
+                    <td class="description">
+                        <TranslateRenderer :translate-key="'ouroffer.table.scoping.description'" />
+                    </td>
                 </tr>
                 <tr>
-                    <th rowspan="3" class="category">Garanties</th>
-                    <td class="items">Support</td>
-                    <td class="description">Réponse à vos questions (expertise ACV, fonctionnalités de l'outil
-                        CloudAssess)</td>
+                    <th class="category">
+                        <TranslateRenderer :translate-key="'ouroffer.table.execute.title'" />
+                    </th>
+                    <td class="items">
+                        <TranslateRenderer :translate-key="'ouroffer.table.execute.items'" />
+                    </td>
+                    <td class="description">
+                        <TranslateRenderer :translate-key="'ouroffer.table.execute.description'" />
+                    </td>
                 </tr>
                 <tr>
-                    <td class="items">Resilio Database</td>
-                    <td class="description">Données à introduire dans le modèle</td>
+                    <th rowspan="3" class="category">
+                        <TranslateRenderer :translate-key="'ouroffer.table.guarantees.title'" />
+                    </th>
+                    <td class="items">
+                        <TranslateRenderer :translate-key="'ouroffer.table.guarantees.items1'" />
+                    </td>
+                    <td class="description">
+                        <TranslateRenderer :translate-key="'ouroffer.table.guarantees.description1'" />
+                    </td>
                 </tr>
                 <tr>
-                    <td class="items">Certification</td>
-                    <td class="description">Vérification de leur conformité aux normes et standards</td>
+                    <td class="items">
+                        <TranslateRenderer :translate-key="'ouroffer.table.guarantees.items2'" />
+                    </td>
+                    <td class="description">
+                        <TranslateRenderer :translate-key="'ouroffer.table.guarantees.description2'" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="items">
+                        <TranslateRenderer :translate-key="'ouroffer.table.guarantees.items3'" />
+                    </td>
+                    <td class="description">
+                        <TranslateRenderer :translate-key="'ouroffer.table.guarantees.description3'" />
+                    </td>
                 </tr>
             </tbody>
         </table>
