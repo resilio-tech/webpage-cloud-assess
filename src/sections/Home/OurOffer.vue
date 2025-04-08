@@ -104,19 +104,19 @@ section {
 
         h1 {
             text-align: center;
-            font-size: 40px;
-            font-family: $font-family-roboto;
+            font-size: 35pt;
+            font-family: $font-family-lexend;
         }
 
         h2 {
-            font-size: 22px;
+            font-family: $font-family-roboto;
+            font-size: 16pt;
             font-weight: normal;
         }
     }
 
     table {
         border-collapse: collapse;
-        font-family: $font-family-lexend;
         line-height: 1.5;
 
         td,
@@ -133,13 +133,21 @@ section {
         }
 
         .category {
-            font-weight: bolder;
-            font-size: large;
+            font-weight: normal;
+            font-size: 15pt;
             font-family: $font-family-roboto;
         }
 
         .items {
-            font-size: large;
+            font-size: 13pt;
+            font-family: $font-family-roboto;
+            font-weight: 600;
+        }
+
+        .description {
+            font-size: 13pt;
+            font-weight: 400;
+            font-family: $font-family-roboto;
         }
     }
 }
