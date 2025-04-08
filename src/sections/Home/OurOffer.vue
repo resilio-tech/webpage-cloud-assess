@@ -1,5 +1,9 @@
 <script setup lang="ts">
 import TranslateRenderer from '@/components/translate/TranslateRenderer.vue';
+import graphPicto from "@/assets/media/picto/graph.png"
+import rocketPicto from "@/assets/media/picto/rocket.png"
+import validationPicto from "@/assets/media/picto/validation.png"
+
 </script>
 
 <template>
@@ -28,6 +32,7 @@ import TranslateRenderer from '@/components/translate/TranslateRenderer.vue';
                 <tr>
                     <th class="category">
                         <TranslateRenderer :translate-key="'ouroffer.table.scoping.title'" />
+                        <img :src=graphPicto />
                     </th>
                     <td class="items">
                         <TranslateRenderer :translate-key="'ouroffer.table.scoping.items'" />
@@ -39,6 +44,7 @@ import TranslateRenderer from '@/components/translate/TranslateRenderer.vue';
                 <tr>
                     <th class="category">
                         <TranslateRenderer :translate-key="'ouroffer.table.execute.title'" />
+                        <img :src=rocketPicto />
                     </th>
                     <td class="items">
                         <TranslateRenderer :translate-key="'ouroffer.table.execute.items'" />
@@ -50,6 +56,7 @@ import TranslateRenderer from '@/components/translate/TranslateRenderer.vue';
                 <tr>
                     <th rowspan="3" class="category">
                         <TranslateRenderer :translate-key="'ouroffer.table.guarantees.title'" />
+                        <img :src=validationPicto />
                     </th>
                     <td class="items">
                         <TranslateRenderer :translate-key="'ouroffer.table.guarantees.items1'" />
@@ -118,6 +125,11 @@ section {
             vertical-align: middle;
             border: 1px solid black;
             padding: 0.4em 2em;
+
+            img {
+                margin-top: 0.4em;
+                width: 4em;
+            }
         }
 
         .category {
