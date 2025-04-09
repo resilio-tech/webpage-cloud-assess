@@ -126,7 +126,7 @@ section {
 
             img {
                 margin-top: 0.4em;
-                width: 4em;
+                width: 3em;
             }
         }
 
@@ -146,6 +146,17 @@ section {
             font-size: 13pt;
             font-weight: 400;
             font-family: $font-family-roboto;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        table {
+            line-height: unset;
+
+            td,
+            th {
+                padding: unset;
+            }
         }
     }
 }
