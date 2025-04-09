@@ -44,15 +44,15 @@ export const fr: Language = {
 	'ouroffer.subtitle': 'Découvrez notre offre pour vous accompagner dans votre projet d\'affichage environnemental du début jusqu\'à la fin.',
 	'ouroffer.table.bootstrap.title': 'Bootstrap',
 	'ouroffer.table.bootstrap.items': 'Kick-off & setup',
-	'ouroffer.table.bootstrap.description': 'Configuration standard de CloudAssess &break() Réponse à vos questions',
+	'ouroffer.table.bootstrap.description': 'Configuration standard de CloudAssess &break()Réponse à vos questions',
 
 	'ouroffer.table.scoping.title': 'Scoping',
 	'ouroffer.table.scoping.items': 'Vison & Roadmap &break() Communication & Risques &break() Rôles & Responsabilités &break() Architecure & Data',
-	'ouroffer.table.scoping.description': 'Cadrer le projet d\'affichage de l\'empreinte &break() Pour intégrer et exécuter dans les meilleures conditions',
+	'ouroffer.table.scoping.description': 'Cadrer le projet d\'affichage de l\'empreinte &break()- &break() Pour intégrer et exécuter dans les meilleures conditions',
 
 	'ouroffer.table.execute.title': 'Exécution',
 	'ouroffer.table.execute.items': 'Pipeline automatisée &break() Modèles ACV custom',
-	'ouroffer.table.execute.description': 'Intégration à votre infrastructure spécifique &break() Développement de modèles spécifiques',
+	'ouroffer.table.execute.description': 'Intégration à votre infrastructure spécifique &break()\& &break() Développement de modèles spécifiques',
 
 	'ouroffer.table.guarantees.title': 'Guarantees',
 	'ouroffer.table.guarantees.items1': 'Support',
