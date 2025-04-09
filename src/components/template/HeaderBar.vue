@@ -26,6 +26,7 @@ import SwitchLanguageButton from '@/components/SwitchLanguageButton.vue';
 const titles: { key: string; title: string; }[] = [
 	{ key: 'solution', title: translate('header.title.solution') as string },
 	{ key: 'crsd', title: translate('header.title.csrd') as string },
+	{ key: 'our-offer', title: translate('header.title.ourOffer') as string},
 	{ key: 'about-us', title: translate('header.title.whoAreWe') as string },
 	{ key: 'customer-case', title: translate('header.title.caseStudies') as string },
 	{ key: 'certification', title: translate('header.title.certification') as string }

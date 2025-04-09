@@ -9,7 +9,7 @@ import validationPicto from "@/assets/media/picto/validation.png"
 <template>
     <section class="container">
         <header>
-            <h1>
+            <h1 id="our-offer">
                 <TranslateRenderer :translate-key="'ouroffer.title'" />
             </h1>
             <h2>
