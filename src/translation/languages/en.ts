@@ -46,11 +46,11 @@ export const en: Language = {
 
 	'ouroffer.table.scoping.title': 'Scoping',
 	'ouroffer.table.scoping.items': 'Vison & Roadmap &break() Communication & Risks &break() Roles & Responsibilities &break() Architecure & Data',
-	'ouroffer.table.scoping.description': 'Frame the footprint reporting project &break() To integrate and execute in the best conditions',
+	'ouroffer.table.scoping.description': 'Frame the footprint reporting project &break()- &break() To integrate and execute in the best conditions',
 
 	'ouroffer.table.execute.title': 'Execution',
 	'ouroffer.table.execute.items': 'Automated Pipeline &break() Custom LCA models',
-	'ouroffer.table.execute.description': 'Integration to your specific infrastructure &break() Development of specific models',
+	'ouroffer.table.execute.description': 'Integration to your specific infrastructure &break()\& &break() Development of specific models',
 
 	'ouroffer.table.guarantees.title': 'Guarantees',
 	'ouroffer.table.guarantees.items1': 'Support',
