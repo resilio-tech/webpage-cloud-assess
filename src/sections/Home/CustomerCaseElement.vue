@@ -35,10 +35,6 @@ const list: string[] = [
 	justify-content: center;
 	align-items: center;
 
-	h1 {
-		font-size: 40px;
-	}
-
 	.customer {
 		width: 60%;
 		display: flex;
