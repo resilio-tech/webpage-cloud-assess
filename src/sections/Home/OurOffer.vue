@@ -132,18 +132,18 @@ section {
 
         .category {
             font-weight: normal;
-            font-size: 15pt;
+            font-size: 14pt;
             font-family: $font-family-roboto;
         }
 
         .items {
-            font-size: 13pt;
+            font-size: 12pt;
             font-family: $font-family-roboto;
             font-weight: 600;
         }
 
         .description {
-            font-size: 13pt;
+            font-size: 12pt;
             font-weight: 400;
             font-family: $font-family-roboto;
         }
