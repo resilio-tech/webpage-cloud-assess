@@ -38,14 +38,14 @@ export const fr: Language = {
 	'cloudAssess.info.team': 'Une équipe pluridisciplinaire dédiée',
 
 	'csrd.resume': 'A partir de &bold(2025), les &bold(grandes entreprises européennes) devront évaluer l\'&bold(empreinte des services cloud) qu\'ils utilisent. Pour permettre à leurs clients et clientes de respecter cette norme, les fournisseurs de services cloud vont devoir afficher les impacts environnementaux associés aux services proposés.',
-	'csrd.cloudAssess': '&cloudAssessBlackOrange() a pour but d’afficher les impacts environnementaux des services cloud sur la base d\'bold(une méthodologie commune, cohérente et transparente).',
+	'csrd.cloudAssess': '&cloudAssessBlackOrange() a pour but d’afficher les impacts environnementaux des services cloud sur la base d\'&bold(une méthodologie commune, cohérente et transparente).',
 
 	'customerCase.title': 'Cas client',
 	'customerCase.exoscale.resume': 'Fournisseur Cloud basé en Suisse, 70 personnes - 7 zones',
 	'customerCase.exoscale.point1': 'Une instance &cloudAssessBlackOrange() est déployée sur l’infrastrucure Exoscale.',
 	'customerCase.exoscale.point2': 'Le flux de données d’usage pour la facturation est copié vers &cloudAssessBlackOrange().',
 	'customerCase.exoscale.point3': 'Les rapports d’empreinte sont retournés dans le data lake.',
-	'customerCase.exoscale.toCome': 'Janvier 2024 : &break() &break() Les clients et clientes verront leur empreinte sur leur facture !',
+	'customerCase.exoscale.toCome': 'Janvier 2024 : &break() &break() Les clients voient leur empreinte sur leur facture !',
 
 	'footer.cloudAssess.addresses': '&linkResilio(Resilio) SA - EPFL Innovation Park, Bâtiment C, 1015 Lausanne, Suisse &break() &linkKleis(Kleis Technology) Sarl, Rue Mauborget 1, 1003 Lausanne, Suisse',
 	'footer.email': 'Email : contact@resilio.tech',
